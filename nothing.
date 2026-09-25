@@ -1,0 +1,30 @@
+ .gitignore                                         |  15 [32m+[m
+ .../student_resource/Documentation_template.md     |  74 [32m+++++[m
+ .../student_resource/README.md                     | 263 [32m++++++++++++++++[m
+ .../student_resource/utils/validate_submission.py  | 349 [32m+++++++++++++++++++++[m
+ ...5a817_amazon_ml_challenge_problem_statement.pdf | Bin [31m0[m -> [32m173220[m bytes
+ ...d_key_instructions_amazon_ml_challenge_2026.pdf | Bin [31m0[m -> [32m70654[m bytes
+ README.md                                          |  90 [32m++++++[m
+ artifacts/.gitkeep                                 |   0
+ data/README.md                                     |  14 [32m+[m
+ data/processed/.gitkeep                            |   0
+ docs/AWS_QUOTAS.md                                 |  60 [32m++++[m
+ docs/PHASES.md                                     |  56 [32m++++[m
+ docs/PHASE_1.md                                    |  87 [32m+++++[m
+ notebooks/01_phase1_foundations.ipynb              | 305 [32m++++++++++++++++++[m
+ output/.gitkeep                                    |   0
+ project_config.json                                |   8 [32m+[m
+ reports/data_audit_full.json                       | 105 [32m+++++++[m
+ reports/data_audit_full.md                         |  53 [32m++++[m
+ reports/data_audit_preview.json                    | 103 [32m++++++[m
+ reports/data_audit_preview.md                      |  51 [32m+++[m
+ reports/experiments.csv                            |   1 [32m+[m
+ reports/setup_verification.md                      |  33 [32m++[m
+ requirements.in                                    |   5 [32m+[m
+ requirements.txt                                   |  92 [32m++++++[m
+ scripts/audit_data.py                              |  81 [32m+++++[m
+ scripts/check_environment.py                       |  50 [32m+++[m
+ src/business_entity_resolution/__init__.py         |   1 [32m+[m
+ src/business_entity_resolution/workspace.py        |  46 [32m+++[m
+ start_notebook.sh                                  |  13 [32m+[m
+ 29 files changed, 1955 insertions(+)

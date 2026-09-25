@@ -1,0 +1,103 @@
+{
+  "created_at_utc": "2026-09-25T17:00:54.922931+00:00",
+  "scope": "preview",
+  "row_limit_per_file": 1000,
+  "limitations": [
+    "No global ID uniqueness or cross-file referential-integrity checks.",
+    "Preview rows are file heads, not a random or representative sample.",
+    "Counts do not establish label correctness or a modeling baseline."
+  ],
+  "files": [
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/train/train_source1.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {},
+      "countries": {
+        "US": 595,
+        "India": 405
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/train/train_source2.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {
+        "business_address": 35
+      },
+      "countries": {
+        "India": 396,
+        "US": 604
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/train/train_source3.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {
+        "business_address": 37
+      },
+      "countries": {
+        "US": 593,
+        "India": 407
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/test/test_source1.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {},
+      "countries": {
+        "US": 390,
+        "France": 128,
+        "India": 482
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/test/test_source2.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {
+        "business_address": 24
+      },
+      "countries": {
+        "India": 469,
+        "France": 140,
+        "US": 391
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/test/test_source3.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {
+        "business_address": 26
+      },
+      "countries": {
+        "India": 473,
+        "France": 159,
+        "US": 368
+      }
+    },
+    {
+      "file": "6ab10eb3b23ba_student_resource/student_resource/dataset/train/train_ground_truth.tsv",
+      "rows_scanned": 1000,
+      "blank_fields": {
+        "matched_entity_ids": 47
+      },
+      "match_count_distribution": {
+        "0": 47,
+        "1": 55,
+        "2": 178,
+        "3": 248,
+        "4": 222,
+        "5": 143,
+        "6": 68,
+        "7": 35,
+        "8": 3,
+        "9": 1
+      },
+      "links_by_source": {
+        "S2": 1657,
+        "S3": 1787
+      },
+      "duplicate_ids_within_truth_rows": 0,
+      "invalid_target_prefixes": 0,
+      "empty_prediction_baseline": 0.047
+    }
+  ]
+}
