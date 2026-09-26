@@ -1,5 +1,9 @@
 # Amazon ML Challenge — learning workspace
 
+**For teammates:** read the [24-page team handbook](output/pdf/team_handbook.pdf)
+for private GitHub onboarding, Ubuntu/Windows setup, the full ML roadmap,
+validation, team workflow, and final submission instructions.
+
 Start with **`notebooks/01_phase1_foundations.ipynb`**. This project supports your
 implementation work: it contains environment setup, bounded previews, structural
 audits, and guided exercises. No matcher, model, or submission has been generated.
@@ -32,7 +36,7 @@ kernel from this project's `.venv`.
 | `data/processed/` | Future derived data and saved validation splits |
 | `reports/` | Audits, environment report, and experiment log |
 | `artifacts/` | Future model files and caches |
-| `output/` | Future final TSV outputs; intentionally empty |
+| `output/` | Future final TSV outputs; `pdf/team_handbook.pdf` is the team guide |
 
 Original PDFs and organizer resource directory remain in their original locations.
 The raw dataset has not been moved, copied, or edited.

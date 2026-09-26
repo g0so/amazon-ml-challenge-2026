@@ -12,4 +12,8 @@ artifacts/*
 !artifacts/.gitkeep
 output/*
 !output/.gitkeep
+!output/pdf/
+output/pdf/*
+!output/pdf/team_handbook.pdf
+tmp/pdfs/
 reports/environment.json
