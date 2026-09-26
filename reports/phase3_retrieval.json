@@ -1,0 +1,46 @@
+{
+  "sample_size": 120,
+  "sample_countries": {
+    "US": 70,
+    "India": 50
+  },
+  "target_files": [
+    "E:\\amazon-ml-challenge-2026\\student_resource\\dataset\\train\\train_source2.tsv",
+    "E:\\amazon-ml-challenge-2026\\student_resource\\dataset\\train\\train_source3.tsv"
+  ],
+  "routes": {
+    "name": {
+      "candidate_recall": 0.06,
+      "oracle_macro_f05": 0.33395281518336056,
+      "candidate_count_min": 0,
+      "candidate_count_mean": 9.041666666666666,
+      "candidate_count_max": 162
+    },
+    "address": {
+      "candidate_recall": 0.01,
+      "oracle_macro_f05": 0.2356409793909794,
+      "candidate_count_min": 0,
+      "candidate_count_mean": 0.2,
+      "candidate_count_max": 2
+    },
+    "name_prefix": {
+      "candidate_recall": 0.37,
+      "oracle_macro_f05": 0.14864342236355332,
+      "candidate_count_min": 0,
+      "candidate_count_mean": 2693.3166666666666,
+      "candidate_count_max": 20168
+    },
+    "union": {
+      "candidate_recall": 0.41,
+      "oracle_macro_f05": 0.15370282556292686,
+      "candidate_count_min": 0,
+      "candidate_count_mean": 2693.425,
+      "candidate_count_max": 20168
+    }
+  },
+  "runtime_seconds": 135.02191799999855,
+  "peak_ram_gib": 0.053035736083984375,
+  "peak_ram_method": "process RSS via psutil/Windows API/ru_maxrss",
+  "seed": 2026,
+  "design": "stream targets once per route; no full target index or all-pairs matrix"
+}
