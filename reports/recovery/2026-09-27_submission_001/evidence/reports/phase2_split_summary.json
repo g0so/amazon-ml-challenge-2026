@@ -1,0 +1,265 @@
+{
+  "created_at_utc": "2026-09-26T15:03:43.605381+00:00",
+  "format_version": 2,
+  "manifest_id": "8f33fb5819bd9acf5bb963c278707919ecc4f6b205242bf5ef84f2826caf741e",
+  "seed": 2026,
+  "proportions": {
+    "train": 0.7,
+    "dev": 0.15,
+    "holdout": 0.15
+  },
+  "provenance": {
+    "mode": "preserved_existing_json",
+    "legacy_sha256": "1f389dbcb24627dd9fc83b954f1ceb4cff445e54a9bc1268b3023babad96e2cb"
+  },
+  "input_hashes": {
+    "train_ground_truth.tsv": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037",
+    "train_source1.tsv": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973",
+    "train_source2.tsv": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed",
+    "train_source3.tsv": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+  },
+  "verified": true,
+  "reference_counts": {
+    "dev": 331018,
+    "holdout": 331034,
+    "train": 1544769
+  },
+  "target_counts": {
+    "dev": 1548174,
+    "holdout": 1548255,
+    "train": 7223790
+  },
+  "distractor_counts": {
+    "dev": 402537,
+    "holdout": 402504,
+    "train": 1876813
+  },
+  "strata": [
+    {
+      "country": "India",
+      "bucket": "0",
+      "split": "dev",
+      "references": 7402
+    },
+    {
+      "country": "India",
+      "bucket": "0",
+      "split": "holdout",
+      "references": 7404
+    },
+    {
+      "country": "India",
+      "bucket": "0",
+      "split": "train",
+      "references": 34545
+    },
+    {
+      "country": "India",
+      "bucket": "1",
+      "split": "dev",
+      "references": 7120
+    },
+    {
+      "country": "India",
+      "bucket": "1",
+      "split": "holdout",
+      "references": 7121
+    },
+    {
+      "country": "India",
+      "bucket": "1",
+      "split": "train",
+      "references": 33227
+    },
+    {
+      "country": "India",
+      "bucket": "2",
+      "split": "dev",
+      "references": 22489
+    },
+    {
+      "country": "India",
+      "bucket": "2",
+      "split": "holdout",
+      "references": 22490
+    },
+    {
+      "country": "India",
+      "bucket": "2",
+      "split": "train",
+      "references": 104948
+    },
+    {
+      "country": "India",
+      "bucket": "3-4",
+      "split": "dev",
+      "references": 60845
+    },
+    {
+      "country": "India",
+      "bucket": "3-4",
+      "split": "holdout",
+      "references": 60846
+    },
+    {
+      "country": "India",
+      "bucket": "3-4",
+      "split": "train",
+      "references": 283943
+    },
+    {
+      "country": "India",
+      "bucket": "5-7",
+      "split": "dev",
+      "references": 33220
+    },
+    {
+      "country": "India",
+      "bucket": "5-7",
+      "split": "holdout",
+      "references": 33221
+    },
+    {
+      "country": "India",
+      "bucket": "5-7",
+      "split": "train",
+      "references": 155029
+    },
+    {
+      "country": "India",
+      "bucket": "8+",
+      "split": "dev",
+      "references": 1400
+    },
+    {
+      "country": "India",
+      "bucket": "8+",
+      "split": "holdout",
+      "references": 1402
+    },
+    {
+      "country": "India",
+      "bucket": "8+",
+      "split": "train",
+      "references": 6536
+    },
+    {
+      "country": "US",
+      "bucket": "0",
+      "split": "dev",
+      "references": 11084
+    },
+    {
+      "country": "US",
+      "bucket": "0",
+      "split": "holdout",
+      "references": 11085
+    },
+    {
+      "country": "US",
+      "bucket": "0",
+      "split": "train",
+      "references": 51727
+    },
+    {
+      "country": "US",
+      "bucket": "1",
+      "split": "dev",
+      "references": 10753
+    },
+    {
+      "country": "US",
+      "bucket": "1",
+      "split": "holdout",
+      "references": 10754
+    },
+    {
+      "country": "US",
+      "bucket": "1",
+      "split": "train",
+      "references": 50182
+    },
+    {
+      "country": "US",
+      "bucket": "2",
+      "split": "dev",
+      "references": 33792
+    },
+    {
+      "country": "US",
+      "bucket": "2",
+      "split": "holdout",
+      "references": 33794
+    },
+    {
+      "country": "US",
+      "bucket": "2",
+      "split": "train",
+      "references": 157699
+    },
+    {
+      "country": "US",
+      "bucket": "3-4",
+      "split": "dev",
+      "references": 91398
+    },
+    {
+      "country": "US",
+      "bucket": "3-4",
+      "split": "holdout",
+      "references": 91399
+    },
+    {
+      "country": "US",
+      "bucket": "3-4",
+      "split": "train",
+      "references": 426525
+    },
+    {
+      "country": "US",
+      "bucket": "5-7",
+      "split": "dev",
+      "references": 49398
+    },
+    {
+      "country": "US",
+      "bucket": "5-7",
+      "split": "holdout",
+      "references": 49399
+    },
+    {
+      "country": "US",
+      "bucket": "5-7",
+      "split": "train",
+      "references": 230526
+    },
+    {
+      "country": "US",
+      "bucket": "8+",
+      "split": "dev",
+      "references": 2117
+    },
+    {
+      "country": "US",
+      "bucket": "8+",
+      "split": "holdout",
+      "references": 2119
+    },
+    {
+      "country": "US",
+      "bucket": "8+",
+      "split": "train",
+      "references": 9882
+    }
+  ],
+  "checks": [
+    "All audited reference and target IDs assigned exactly once",
+    "Every labeled target inherits its true reference partition",
+    "No missing, additional, or mislabeled distractor assignments",
+    "Allowed partition names and reference country/match-count strata verified"
+  ],
+  "limitations": [
+    "This prevents labeled-identity overlap; text aliases and related real businesses can still span partitions.",
+    "Holdout assignments were checked structurally, but no holdout predictions were scored."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "threshold": 0.362,
+  "model_sha256": "1ea59adbbe61b158501508c032f6b4173f2b1da67ccfe84c01070a3e01170f3d",
+  "packet_identity_verified": true,
+  "parity_max_difference": 1.0842021724855044e-19,
+  "references": 2000,
+  "pairs": 189461,
+  "challenger": {
+    "macro_f05": 0.9168941213537718,
+    "tp": 6024,
+    "fp": 328,
+    "fn": 922,
+    "by_country": {
+      "India": 0.8899388371860454,
+      "US": 0.9348643107989228
+    },
+    "singleton_fp_rate": 0.09259259259259259
+  },
+  "v3": {
+    "macro_f05": 0.8787628377362674,
+    "tp": 5857,
+    "fp": 607,
+    "fn": 1089,
+    "by_country": {
+      "India": 0.8391649862840748,
+      "US": 0.9051614053710626
+    },
+    "singleton_fp_rate": 0.2037037037037037
+  },
+  "elapsed_seconds": 25.694528701002127,
+  "evaluation": "Previously inspected secondary dev sample; no fitting or threshold selection here"
+}

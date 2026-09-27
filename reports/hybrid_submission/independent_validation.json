@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "references": 1732544,
+  "candidate_pairs": 138530079,
+  "country_counts": {
+    "India": 809986,
+    "US": 663106,
+    "France": 259452
+  },
+  "policy": {
+    "India": {
+      "model": "A",
+      "threshold": 0.362
+    },
+    "US": {
+      "model": "B",
+      "threshold": 0.665
+    },
+    "France": {
+      "model": "B",
+      "threshold": 0.665
+    }
+  },
+  "changes_vs_current_0787": {
+    "India_changed_vs_B": 306963
+  },
+  "files_sha256": {
+    "data/processed/inference_runs/catboost_first_submission/output/matching_results.tsv": "aaf4659d58b131c2f0746e65a4329d750bdb292d510323cb1ebd13eecab5b9c1",
+    "reports/rescored_v3_submission/matching_results.tsv": "5d885b5e7c030634d5fd30b7d5d444b8477a7bc425fa0778b211890aa5d413a4",
+    "reports/hybrid_submission/matching_results.tsv": "5f4239110991859cd98355aa4beeef7ee25a72f5edfe0077669160dde2c41ac4",
+    "data/processed/inference_runs/catboost_first_submission/output/candidate_pairs.tsv": "9fca2c3685648dc3a46480d1ce7530b69842cac0021088a58ba26d493fd7694e",
+    "reports/rescored_v3_submission/candidate_pairs.tsv": "b1d6fcd08820b0d8d15b64e9035180e68b2f3cb78179afa5a0598fb7cfc89b4b"
+  },
+  "checks": [
+    "Exact known source and hybrid hashes",
+    "Headers and exactly two TSV columns",
+    "Complete unique reference coverage against verified test DB",
+    "No duplicate targets",
+    "All 9,969,589 target IDs sourced from verified test DB; every candidate checked",
+    "Hybrid equals A for India and B for US/France",
+    "All hybrid matches are subsets of original candidates",
+    "Original and rescored candidate lists identical per reference despite row-order differences"
+  ],
+  "limitations": "Structural and source-policy verification, not test accuracy. Country selection used inspected DEV evidence; no fresh holdout result was supplied.",
+  "elapsed_seconds": 163.35593525800505
+}

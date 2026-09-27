@@ -1,0 +1,104 @@
+[
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/docs/recovery/START_HERE.md",
+    "snapshot": "evidence/docs/recovery/START_HERE.md",
+    "sha256": "964010441588ff5fd963fb36235ba76d680e4e96ca7bcf0523ca1493326d543c",
+    "bytes": 8717
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/reports/gpu_challenger_secondary_eval.json",
+    "snapshot": "evidence/reports/gpu_challenger_secondary_eval.json",
+    "sha256": "6b8426718b46513c398350b31da58e5ca875fca21c45acb8aac03f3c0f4f1e7a",
+    "bytes": 861
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/reports/gpu_feature_packet_export.json",
+    "snapshot": "evidence/reports/gpu_feature_packet_export.json",
+    "sha256": "075d6c09a2028b25a4ae55756d64481ec50104ed0f6e0f8c7e43c63a93c72e73",
+    "bytes": 878
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/reports/gpu_feature_packet_verification.json",
+    "snapshot": "evidence/reports/gpu_feature_packet_verification.json",
+    "sha256": "90b793a1ec6c8674b0d978f3ad7af75bab6ea0072b39fb2f66363350f55c7dfe",
+    "bytes": 373
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/reports/phase2_split_summary.json",
+    "snapshot": "evidence/reports/phase2_split_summary.json",
+    "sha256": "4b022c14eb854d1f0da16310fb38b53815fd7abef3ef581f0afc05017fc15672",
+    "bytes": 5590
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/reports/phase4_experiment_v3_results.json",
+    "snapshot": "evidence/reports/phase4_experiment_v3_results.json",
+    "sha256": "1d8fb1fae0fa1b4d7576d20205d5cf6d77c80328d9b5918d91ef76abd4c9de44",
+    "bytes": 197118
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/scripts/evaluate_gpu_challenger.py",
+    "snapshot": "evidence/scripts/evaluate_gpu_challenger.py",
+    "sha256": "f75580d85d44655205e87477c3917847e03cce1eda0c2a9baa8c0da5cf531b4c",
+    "bytes": 4888
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/scripts/rescore_gpu_challenger.py",
+    "snapshot": "evidence/scripts/rescore_gpu_challenger.py",
+    "sha256": "9a161870f137051c19eeb451b99e8ee94701d3e3f1c6a79f85768e79de676f6c",
+    "bytes": 5859
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/scripts/run_submission.py",
+    "snapshot": "evidence/scripts/run_submission.py",
+    "sha256": "37ef73cfdbc90445b380acfb8d332880460867d022464804eeba41ab5a8251d2",
+    "bytes": 17462
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/scripts/export_gpu_feature_packet.py",
+    "snapshot": "evidence/scripts/export_gpu_feature_packet.py",
+    "sha256": "1f4fa8c650230926030fce25674674174b62762009b763da3789664fa05a5862",
+    "bytes": 10227
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/src/business_entity_resolution/inference_features.py",
+    "snapshot": "evidence/src/business_entity_resolution/inference_features.py",
+    "sha256": "60f27faa5ffb78b70db36b7eb5fbe1060e73234c89f1775b51da15640de7257a",
+    "bytes": 2477
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/src/business_entity_resolution/normalize.py",
+    "snapshot": "evidence/src/business_entity_resolution/normalize.py",
+    "sha256": "07a53a9cdbc867af37488b41295f8582a259c2d54e48fedaede76f56066fd01c",
+    "bytes": 1012
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/artifacts/gpu_challenger/metadata.json",
+    "snapshot": "evidence/artifacts/gpu_challenger/metadata.json",
+    "sha256": "aff46ad876840ee1c8bdabbb80cb13f0678bb7c1d567233dcbd79e3de989dd9e",
+    "bytes": 2873
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/artifacts/gpu_challenger/tuning_results.json",
+    "snapshot": "evidence/artifacts/gpu_challenger/tuning_results.json",
+    "sha256": "d8acde1577453f5b5ea7d85412cf20216bb746a3d362ff1b6d7338579df2425b",
+    "bytes": 1531
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/data/processed/inference_runs/catboost_first_submission/validation.json",
+    "snapshot": "evidence/data/processed/inference_runs/catboost_first_submission/validation.json",
+    "sha256": "95f3f807f5e253d6cbc34a405093d7346f7b1c6fd3f7cca251a416a4cee5ed2c",
+    "bytes": 347
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/data/processed/inference_runs/catboost_first_submission/manifest.json",
+    "snapshot": "evidence/data/processed/inference_runs/catboost_first_submission/manifest.json",
+    "sha256": "7082160686214f2f8c5b67c78e82aa10fe683d72e91ef740e61753c1ff1eb08e",
+    "bytes": 1047
+  },
+  {
+    "source": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/data/processed/inference_runs/catboost_first_submission/status.json",
+    "snapshot": "evidence/data/processed/inference_runs/catboost_first_submission/status.json",
+    "sha256": "dd835458d241865591a4432040772c25f7c545795f22175327a1d2d61973445e",
+    "bytes": 361
+  }
+]

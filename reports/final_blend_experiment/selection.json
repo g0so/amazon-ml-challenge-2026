@@ -1,0 +1,1990 @@
+{
+  "selected_on_tune_only": {
+    "weight_b": 1.0,
+    "threshold": 0.665,
+    "macro_f05": 0.8248836115158982,
+    "countries": {
+      "India": 0.7761461809137278,
+      "US": 0.8583803157880311
+    },
+    "tp": 7268,
+    "fp": 221,
+    "fn": 3121,
+    "singleton_errors": 19,
+    "singletons": 156
+  },
+  "baseline_tune": {
+    "macro_f05": 0.8248836115158982,
+    "countries": {
+      "India": 0.7761461809137278,
+      "US": 0.8583803157880311
+    },
+    "tp": 7268,
+    "fp": 221,
+    "fn": 3121,
+    "singleton_errors": 19,
+    "singletons": 156
+  },
+  "search": [
+    {
+      "weight_b": 0.25,
+      "threshold": 0.2,
+      "macro_f05": 0.7793713616879528,
+      "countries": {
+        "India": 0.7573981032866284,
+        "US": 0.7944733424339697
+      },
+      "tp": 8149,
+      "fp": 1498,
+      "fn": 2240,
+      "singleton_errors": 77,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.22,
+      "macro_f05": 0.7856157603560288,
+      "countries": {
+        "India": 0.7617841513387928,
+        "US": 0.8019949652036453
+      },
+      "tp": 8107,
+      "fp": 1368,
+      "fn": 2282,
+      "singleton_errors": 73,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.24,
+      "macro_f05": 0.7921827679862207,
+      "countries": {
+        "India": 0.767290308258063,
+        "US": 0.809291083952367
+      },
+      "tp": 8075,
+      "fp": 1247,
+      "fn": 2314,
+      "singleton_errors": 68,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.26,
+      "macro_f05": 0.7984784506432394,
+      "countries": {
+        "India": 0.7698061275900048,
+        "US": 0.8181846254301081
+      },
+      "tp": 8044,
+      "fp": 1140,
+      "fn": 2345,
+      "singleton_errors": 61,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.28,
+      "macro_f05": 0.8024294957623709,
+      "countries": {
+        "India": 0.7734146754911905,
+        "US": 0.8223710651501003
+      },
+      "tp": 8010,
+      "fp": 1047,
+      "fn": 2379,
+      "singleton_errors": 60,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.3,
+      "macro_f05": 0.8077448778732823,
+      "countries": {
+        "India": 0.7784551222377202,
+        "US": 0.8278754073370939
+      },
+      "tp": 7978,
+      "fp": 956,
+      "fn": 2411,
+      "singleton_errors": 55,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.32,
+      "macro_f05": 0.8103198009588344,
+      "countries": {
+        "India": 0.779597157213392,
+        "US": 0.8314351387861295
+      },
+      "tp": 7954,
+      "fp": 887,
+      "fn": 2435,
+      "singleton_errors": 53,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.34,
+      "macro_f05": 0.8131389003829181,
+      "countries": {
+        "India": 0.7821261397884043,
+        "US": 0.8344536323550755
+      },
+      "tp": 7926,
+      "fp": 824,
+      "fn": 2463,
+      "singleton_errors": 52,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.36,
+      "macro_f05": 0.8163685120942531,
+      "countries": {
+        "India": 0.7840887063350112,
+        "US": 0.8385540703832262
+      },
+      "tp": 7889,
+      "fp": 765,
+      "fn": 2500,
+      "singleton_errors": 48,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.362,
+      "macro_f05": 0.8170832556839968,
+      "countries": {
+        "India": 0.7851663248430715,
+        "US": 0.839019414000988
+      },
+      "tp": 7887,
+      "fp": 756,
+      "fn": 2502,
+      "singleton_errors": 47,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.38,
+      "macro_f05": 0.8196814976847271,
+      "countries": {
+        "India": 0.7864656127679076,
+        "US": 0.8425104129650158
+      },
+      "tp": 7860,
+      "fp": 703,
+      "fn": 2529,
+      "singleton_errors": 44,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.4,
+      "macro_f05": 0.8209677530415659,
+      "countries": {
+        "India": 0.7869935276980318,
+        "US": 0.84431786742278
+      },
+      "tp": 7822,
+      "fp": 659,
+      "fn": 2567,
+      "singleton_errors": 42,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.42,
+      "macro_f05": 0.8218493459531144,
+      "countries": {
+        "India": 0.7862252893354207,
+        "US": 0.846333371367525
+      },
+      "tp": 7790,
+      "fp": 616,
+      "fn": 2599,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.44,
+      "macro_f05": 0.8231952816558092,
+      "countries": {
+        "India": 0.7869620602779334,
+        "US": 0.8480979793632133
+      },
+      "tp": 7761,
+      "fp": 577,
+      "fn": 2628,
+      "singleton_errors": 37,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.46,
+      "macro_f05": 0.824831640312717,
+      "countries": {
+        "India": 0.7881313689355527,
+        "US": 0.8500553363885861
+      },
+      "tp": 7730,
+      "fp": 527,
+      "fn": 2659,
+      "singleton_errors": 35,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.48,
+      "macro_f05": 0.8258050050804026,
+      "countries": {
+        "India": 0.7889120763024559,
+        "US": 0.851161112485718
+      },
+      "tp": 7713,
+      "fp": 496,
+      "fn": 2676,
+      "singleton_errors": 34,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.5,
+      "macro_f05": 0.8263162219260003,
+      "countries": {
+        "India": 0.7885866047309509,
+        "US": 0.8522473761511693
+      },
+      "tp": 7679,
+      "fp": 470,
+      "fn": 2710,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.52,
+      "macro_f05": 0.8264671472537818,
+      "countries": {
+        "India": 0.7878489526535324,
+        "US": 0.8530090110341556
+      },
+      "tp": 7657,
+      "fp": 450,
+      "fn": 2732,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.54,
+      "macro_f05": 0.8266534062945337,
+      "countries": {
+        "India": 0.7892208252584157,
+        "US": 0.8523804108086711
+      },
+      "tp": 7625,
+      "fp": 425,
+      "fn": 2764,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.56,
+      "macro_f05": 0.8263821312416044,
+      "countries": {
+        "India": 0.7878496746615831,
+        "US": 0.8528650682161747
+      },
+      "tp": 7589,
+      "fp": 400,
+      "fn": 2800,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.58,
+      "macro_f05": 0.8266063835727366,
+      "countries": {
+        "India": 0.7871244601096508,
+        "US": 0.8537418787762749
+      },
+      "tp": 7557,
+      "fp": 379,
+      "fn": 2832,
+      "singleton_errors": 30,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.6,
+      "macro_f05": 0.8265820770482802,
+      "countries": {
+        "India": 0.7859437356572296,
+        "US": 0.8545123656758751
+      },
+      "tp": 7480,
+      "fp": 332,
+      "fn": 2909,
+      "singleton_errors": 28,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.62,
+      "macro_f05": 0.8264930829234138,
+      "countries": {
+        "India": 0.7855398747153045,
+        "US": 0.8546397760788188
+      },
+      "tp": 7442,
+      "fp": 303,
+      "fn": 2947,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.64,
+      "macro_f05": 0.8264830515213172,
+      "countries": {
+        "India": 0.7840874141595164,
+        "US": 0.8556211104955133
+      },
+      "tp": 7417,
+      "fp": 286,
+      "fn": 2972,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.66,
+      "macro_f05": 0.8249223588122793,
+      "countries": {
+        "India": 0.780212504482665,
+        "US": 0.8556509538577171
+      },
+      "tp": 7380,
+      "fp": 274,
+      "fn": 3009,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.665,
+      "macro_f05": 0.8250639479693097,
+      "countries": {
+        "India": 0.7810857656229667,
+        "US": 0.8552896728440177
+      },
+      "tp": 7370,
+      "fp": 270,
+      "fn": 3019,
+      "singleton_errors": 25,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.68,
+      "macro_f05": 0.8243971758856203,
+      "countries": {
+        "India": 0.7797331744071478,
+        "US": 0.8550942567667754
+      },
+      "tp": 7354,
+      "fp": 255,
+      "fn": 3035,
+      "singleton_errors": 25,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.7,
+      "macro_f05": 0.8230198476625895,
+      "countries": {
+        "India": 0.7771173620094456,
+        "US": 0.8545681252037266
+      },
+      "tp": 7306,
+      "fp": 232,
+      "fn": 3083,
+      "singleton_errors": 23,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.72,
+      "macro_f05": 0.8225912445342601,
+      "countries": {
+        "India": 0.7770795031010951,
+        "US": 0.8538709678364691
+      },
+      "tp": 7263,
+      "fp": 206,
+      "fn": 3126,
+      "singleton_errors": 21,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.74,
+      "macro_f05": 0.82095847265473,
+      "countries": {
+        "India": 0.7720492873284488,
+        "US": 0.8545732220747051
+      },
+      "tp": 7198,
+      "fp": 180,
+      "fn": 3191,
+      "singleton_errors": 19,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.76,
+      "macro_f05": 0.8187920721733573,
+      "countries": {
+        "India": 0.7677197012853445,
+        "US": 0.8538935554270983
+      },
+      "tp": 7132,
+      "fp": 161,
+      "fn": 3257,
+      "singleton_errors": 18,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.78,
+      "macro_f05": 0.8165940898696287,
+      "countries": {
+        "India": 0.763111294457979,
+        "US": 0.8533522315979952
+      },
+      "tp": 7064,
+      "fp": 145,
+      "fn": 3325,
+      "singleton_errors": 15,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.8,
+      "macro_f05": 0.8134645317369162,
+      "countries": {
+        "India": 0.7564859782442727,
+        "US": 0.8526252698516575
+      },
+      "tp": 6974,
+      "fp": 126,
+      "fn": 3415,
+      "singleton_errors": 12,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.82,
+      "macro_f05": 0.8083318936305743,
+      "countries": {
+        "India": 0.7470076880562796,
+        "US": 0.8504793510050335
+      },
+      "tp": 6881,
+      "fp": 106,
+      "fn": 3508,
+      "singleton_errors": 12,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.25,
+      "threshold": 0.84,
+      "macro_f05": 0.8026459916980819,
+      "countries": {
+        "India": 0.7357868252451112,
+        "US": 0.8485975672917434
+      },
+      "tp": 6794,
+      "fp": 96,
+      "fn": 3595,
+      "singleton_errors": 11,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.2,
+      "macro_f05": 0.7836587453677958,
+      "countries": {
+        "India": 0.7621900387789701,
+        "US": 0.7984139531583161
+      },
+      "tp": 8131,
+      "fp": 1411,
+      "fn": 2258,
+      "singleton_errors": 76,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.22,
+      "macro_f05": 0.7900811438375188,
+      "countries": {
+        "India": 0.7654589328689796,
+        "US": 0.8070037207799008
+      },
+      "tp": 8083,
+      "fp": 1275,
+      "fn": 2306,
+      "singleton_errors": 69,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.24,
+      "macro_f05": 0.7968167473613147,
+      "countries": {
+        "India": 0.7697969798554778,
+        "US": 0.8153871387517155
+      },
+      "tp": 8051,
+      "fp": 1155,
+      "fn": 2338,
+      "singleton_errors": 65,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.26,
+      "macro_f05": 0.8009809237970105,
+      "countries": {
+        "India": 0.7722010642664131,
+        "US": 0.8207610072314254
+      },
+      "tp": 8011,
+      "fp": 1055,
+      "fn": 2378,
+      "singleton_errors": 61,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.28,
+      "macro_f05": 0.8057979097447651,
+      "countries": {
+        "India": 0.7742777062854752,
+        "US": 0.8274614016611049
+      },
+      "tp": 7975,
+      "fp": 962,
+      "fn": 2414,
+      "singleton_errors": 59,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.3,
+      "macro_f05": 0.8111336184351738,
+      "countries": {
+        "India": 0.7781278585819325,
+        "US": 0.8338181170519683
+      },
+      "tp": 7942,
+      "fp": 880,
+      "fn": 2447,
+      "singleton_errors": 52,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.32,
+      "macro_f05": 0.8139946422293677,
+      "countries": {
+        "India": 0.7822211383187692,
+        "US": 0.8358322247820964
+      },
+      "tp": 7912,
+      "fp": 820,
+      "fn": 2477,
+      "singleton_errors": 49,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.34,
+      "macro_f05": 0.8169891457685541,
+      "countries": {
+        "India": 0.7851123091887644,
+        "US": 0.8388977477373408
+      },
+      "tp": 7883,
+      "fp": 758,
+      "fn": 2506,
+      "singleton_errors": 47,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.36,
+      "macro_f05": 0.820301638185492,
+      "countries": {
+        "India": 0.7876812802407939,
+        "US": 0.8427212542757175
+      },
+      "tp": 7854,
+      "fp": 695,
+      "fn": 2535,
+      "singleton_errors": 43,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.362,
+      "macro_f05": 0.8204526039834575,
+      "countries": {
+        "India": 0.787777993660036,
+        "US": 0.8429095071416246
+      },
+      "tp": 7848,
+      "fp": 689,
+      "fn": 2541,
+      "singleton_errors": 43,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.38,
+      "macro_f05": 0.8224473444175003,
+      "countries": {
+        "India": 0.7891348427888527,
+        "US": 0.8453426633096306
+      },
+      "tp": 7814,
+      "fp": 643,
+      "fn": 2575,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.4,
+      "macro_f05": 0.8234228022775345,
+      "countries": {
+        "India": 0.7886963412701483,
+        "US": 0.8472899200227683
+      },
+      "tp": 7785,
+      "fp": 599,
+      "fn": 2604,
+      "singleton_errors": 39,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.42,
+      "macro_f05": 0.8239263575146524,
+      "countries": {
+        "India": 0.7886463797627367,
+        "US": 0.8481739012789047
+      },
+      "tp": 7757,
+      "fp": 556,
+      "fn": 2632,
+      "singleton_errors": 38,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.44,
+      "macro_f05": 0.8241945258724737,
+      "countries": {
+        "India": 0.7870946943959155,
+        "US": 0.8496928352450013
+      },
+      "tp": 7721,
+      "fp": 521,
+      "fn": 2668,
+      "singleton_errors": 36,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.46,
+      "macro_f05": 0.8248091399801307,
+      "countries": {
+        "India": 0.7869868856691775,
+        "US": 0.850803962684284
+      },
+      "tp": 7695,
+      "fp": 496,
+      "fn": 2694,
+      "singleton_errors": 34,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.48,
+      "macro_f05": 0.8258675562407798,
+      "countries": {
+        "India": 0.7865597593520842,
+        "US": 0.852883376149658
+      },
+      "tp": 7664,
+      "fp": 464,
+      "fn": 2725,
+      "singleton_errors": 33,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.5,
+      "macro_f05": 0.8263107384790228,
+      "countries": {
+        "India": 0.7855909329279288,
+        "US": 0.854297016534949
+      },
+      "tp": 7595,
+      "fp": 421,
+      "fn": 2794,
+      "singleton_errors": 32,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.52,
+      "macro_f05": 0.8262389757469475,
+      "countries": {
+        "India": 0.7849615082967732,
+        "US": 0.8546085287413867
+      },
+      "tp": 7566,
+      "fp": 398,
+      "fn": 2823,
+      "singleton_errors": 32,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.54,
+      "macro_f05": 0.826920165665479,
+      "countries": {
+        "India": 0.7846349558113244,
+        "US": 0.8559823290185594
+      },
+      "tp": 7536,
+      "fp": 366,
+      "fn": 2853,
+      "singleton_errors": 32,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.56,
+      "macro_f05": 0.8265153890294902,
+      "countries": {
+        "India": 0.7846979032564974,
+        "US": 0.8552560907249894
+      },
+      "tp": 7493,
+      "fp": 335,
+      "fn": 2896,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.58,
+      "macro_f05": 0.8268106797189344,
+      "countries": {
+        "India": 0.7849940266349573,
+        "US": 0.8555508091163583
+      },
+      "tp": 7458,
+      "fp": 313,
+      "fn": 2931,
+      "singleton_errors": 29,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.6,
+      "macro_f05": 0.8275710429295768,
+      "countries": {
+        "India": 0.7861509905975296,
+        "US": 0.8560385929575641
+      },
+      "tp": 7427,
+      "fp": 290,
+      "fn": 2962,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.62,
+      "macro_f05": 0.8265258219959567,
+      "countries": {
+        "India": 0.7836331108653114,
+        "US": 0.8560055143478402
+      },
+      "tp": 7394,
+      "fp": 269,
+      "fn": 2995,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.64,
+      "macro_f05": 0.8253055434518317,
+      "countries": {
+        "India": 0.7814434100141519,
+        "US": 0.8554515091778413
+      },
+      "tp": 7359,
+      "fp": 260,
+      "fn": 3030,
+      "singleton_errors": 25,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.66,
+      "macro_f05": 0.8247393626638178,
+      "countries": {
+        "India": 0.7789762702186992,
+        "US": 0.8561918367740171
+      },
+      "tp": 7329,
+      "fp": 242,
+      "fn": 3060,
+      "singleton_errors": 25,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.665,
+      "macro_f05": 0.8251464698935055,
+      "countries": {
+        "India": 0.7791573845305352,
+        "US": 0.8567542664703051
+      },
+      "tp": 7325,
+      "fp": 237,
+      "fn": 3064,
+      "singleton_errors": 24,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.68,
+      "macro_f05": 0.823840269328791,
+      "countries": {
+        "India": 0.7766231612438721,
+        "US": 0.8562920725232628
+      },
+      "tp": 7292,
+      "fp": 225,
+      "fn": 3097,
+      "singleton_errors": 23,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.7,
+      "macro_f05": 0.8235758624058696,
+      "countries": {
+        "India": 0.7752510335619707,
+        "US": 0.8567889899914964
+      },
+      "tp": 7255,
+      "fp": 209,
+      "fn": 3134,
+      "singleton_errors": 21,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.72,
+      "macro_f05": 0.8213709034443,
+      "countries": {
+        "India": 0.772358767918206,
+        "US": 0.8550564094133026
+      },
+      "tp": 7204,
+      "fp": 187,
+      "fn": 3185,
+      "singleton_errors": 21,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.74,
+      "macro_f05": 0.8206991879064924,
+      "countries": {
+        "India": 0.7701669620294886,
+        "US": 0.8554294353877627
+      },
+      "tp": 7160,
+      "fp": 168,
+      "fn": 3229,
+      "singleton_errors": 17,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.76,
+      "macro_f05": 0.8180311684884575,
+      "countries": {
+        "India": 0.767083484774962,
+        "US": 0.8530469556076316
+      },
+      "tp": 7093,
+      "fp": 150,
+      "fn": 3296,
+      "singleton_errors": 16,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.78,
+      "macro_f05": 0.8152976186367529,
+      "countries": {
+        "India": 0.7616695247319625,
+        "US": 0.8521556224340835
+      },
+      "tp": 7013,
+      "fp": 133,
+      "fn": 3376,
+      "singleton_errors": 13,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.8,
+      "macro_f05": 0.8113540213156009,
+      "countries": {
+        "India": 0.754156795629569,
+        "US": 0.8506650504428958
+      },
+      "tp": 6934,
+      "fp": 114,
+      "fn": 3455,
+      "singleton_errors": 12,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.82,
+      "macro_f05": 0.8064770377943381,
+      "countries": {
+        "India": 0.7432331351440405,
+        "US": 0.8499438820230579
+      },
+      "tp": 6855,
+      "fp": 98,
+      "fn": 3534,
+      "singleton_errors": 12,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.5,
+      "threshold": 0.84,
+      "macro_f05": 0.801836982255454,
+      "countries": {
+        "India": 0.7341550481697728,
+        "US": 0.8483540370657479
+      },
+      "tp": 6762,
+      "fp": 86,
+      "fn": 3627,
+      "singleton_errors": 10,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.2,
+      "macro_f05": 0.7878799410609387,
+      "countries": {
+        "India": 0.7628787860913071,
+        "US": 0.8050629620805618
+      },
+      "tp": 8083,
+      "fp": 1306,
+      "fn": 2306,
+      "singleton_errors": 72,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.22,
+      "macro_f05": 0.7951053696320899,
+      "countries": {
+        "India": 0.7667508855479771,
+        "US": 0.8145930971634656
+      },
+      "tp": 8039,
+      "fp": 1170,
+      "fn": 2350,
+      "singleton_errors": 65,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.24,
+      "macro_f05": 0.8011496398746683,
+      "countries": {
+        "India": 0.7705920193603177,
+        "US": 0.8221515590358245
+      },
+      "tp": 7983,
+      "fp": 1041,
+      "fn": 2406,
+      "singleton_errors": 61,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.26,
+      "macro_f05": 0.805079420596684,
+      "countries": {
+        "India": 0.7738651539501661,
+        "US": 0.826532645479724
+      },
+      "tp": 7952,
+      "fp": 955,
+      "fn": 2437,
+      "singleton_errors": 59,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.28,
+      "macro_f05": 0.810702963997404,
+      "countries": {
+        "India": 0.7783834511745934,
+        "US": 0.8329158125179184
+      },
+      "tp": 7926,
+      "fp": 864,
+      "fn": 2463,
+      "singleton_errors": 54,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.3,
+      "macro_f05": 0.8148290029267016,
+      "countries": {
+        "India": 0.7817621629207643,
+        "US": 0.83755548126599
+      },
+      "tp": 7891,
+      "fp": 793,
+      "fn": 2498,
+      "singleton_errors": 49,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.32,
+      "macro_f05": 0.8180364449804035,
+      "countries": {
+        "India": 0.7857046014102578,
+        "US": 0.8402577682890189
+      },
+      "tp": 7853,
+      "fp": 736,
+      "fn": 2536,
+      "singleton_errors": 46,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.34,
+      "macro_f05": 0.8196513802579548,
+      "countries": {
+        "India": 0.7867062849540486,
+        "US": 0.8422941847919108
+      },
+      "tp": 7828,
+      "fp": 688,
+      "fn": 2561,
+      "singleton_errors": 43,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.36,
+      "macro_f05": 0.8208443178893322,
+      "countries": {
+        "India": 0.7867637901678469,
+        "US": 0.8442674927350322
+      },
+      "tp": 7785,
+      "fp": 641,
+      "fn": 2604,
+      "singleton_errors": 41,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.362,
+      "macro_f05": 0.8213267248872189,
+      "countries": {
+        "India": 0.7870135013452804,
+        "US": 0.8449098290313412
+      },
+      "tp": 7785,
+      "fp": 634,
+      "fn": 2604,
+      "singleton_errors": 41,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.38,
+      "macro_f05": 0.8220875487109007,
+      "countries": {
+        "India": 0.7872485458836304,
+        "US": 0.8460320152209819
+      },
+      "tp": 7724,
+      "fp": 575,
+      "fn": 2665,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.4,
+      "macro_f05": 0.8230468845369542,
+      "countries": {
+        "India": 0.7865180745275715,
+        "US": 0.8481527370855851
+      },
+      "tp": 7682,
+      "fp": 537,
+      "fn": 2707,
+      "singleton_errors": 37,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.42,
+      "macro_f05": 0.8230264224621973,
+      "countries": {
+        "India": 0.7851058181917102,
+        "US": 0.8490888400204286
+      },
+      "tp": 7658,
+      "fp": 511,
+      "fn": 2731,
+      "singleton_errors": 37,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.44,
+      "macro_f05": 0.823642636747012,
+      "countries": {
+        "India": 0.7841078605211423,
+        "US": 0.8508144570777277
+      },
+      "tp": 7630,
+      "fp": 473,
+      "fn": 2759,
+      "singleton_errors": 36,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.46,
+      "macro_f05": 0.8234847343027328,
+      "countries": {
+        "India": 0.7821381592864499,
+        "US": 0.8519017841733166
+      },
+      "tp": 7590,
+      "fp": 446,
+      "fn": 2799,
+      "singleton_errors": 35,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.48,
+      "macro_f05": 0.8246838723532316,
+      "countries": {
+        "India": 0.7823584359851371,
+        "US": 0.8537736829504257
+      },
+      "tp": 7569,
+      "fp": 418,
+      "fn": 2820,
+      "singleton_errors": 34,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.5,
+      "macro_f05": 0.8258371225045363,
+      "countries": {
+        "India": 0.7843512066562983,
+        "US": 0.854349939808556
+      },
+      "tp": 7539,
+      "fp": 390,
+      "fn": 2850,
+      "singleton_errors": 32,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.52,
+      "macro_f05": 0.8256579626681759,
+      "countries": {
+        "India": 0.7832008296066647,
+        "US": 0.854838286965795
+      },
+      "tp": 7503,
+      "fp": 365,
+      "fn": 2886,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.54,
+      "macro_f05": 0.8261943220199757,
+      "countries": {
+        "India": 0.7834751407056182,
+        "US": 0.8555547492225317
+      },
+      "tp": 7481,
+      "fp": 342,
+      "fn": 2908,
+      "singleton_errors": 30,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.56,
+      "macro_f05": 0.8267171568749855,
+      "countries": {
+        "India": 0.7832908701852009,
+        "US": 0.8565635698867495
+      },
+      "tp": 7459,
+      "fp": 321,
+      "fn": 2930,
+      "singleton_errors": 29,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.58,
+      "macro_f05": 0.8274224047835254,
+      "countries": {
+        "India": 0.7841656690166497,
+        "US": 0.8571522872959673
+      },
+      "tp": 7423,
+      "fp": 297,
+      "fn": 2966,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.6,
+      "macro_f05": 0.8257698387493602,
+      "countries": {
+        "India": 0.7812037047066316,
+        "US": 0.8563996564097731
+      },
+      "tp": 7393,
+      "fp": 284,
+      "fn": 2996,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.62,
+      "macro_f05": 0.8251726566493025,
+      "countries": {
+        "India": 0.7800580652136585,
+        "US": 0.8561794230915728
+      },
+      "tp": 7365,
+      "fp": 264,
+      "fn": 3024,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.64,
+      "macro_f05": 0.8250369570472698,
+      "countries": {
+        "India": 0.7789566300427325,
+        "US": 0.8567074630087681
+      },
+      "tp": 7341,
+      "fp": 254,
+      "fn": 3048,
+      "singleton_errors": 25,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.66,
+      "macro_f05": 0.8248422791808943,
+      "countries": {
+        "India": 0.7776709081857185,
+        "US": 0.8572626477726292
+      },
+      "tp": 7304,
+      "fp": 235,
+      "fn": 3085,
+      "singleton_errors": 23,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.665,
+      "macro_f05": 0.8250248502921103,
+      "countries": {
+        "India": 0.7775156808108225,
+        "US": 0.8576773840975846
+      },
+      "tp": 7291,
+      "fp": 228,
+      "fn": 3098,
+      "singleton_errors": 22,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.68,
+      "macro_f05": 0.8241587549823673,
+      "countries": {
+        "India": 0.7757341072026377,
+        "US": 0.8574404870334528
+      },
+      "tp": 7261,
+      "fp": 210,
+      "fn": 3128,
+      "singleton_errors": 21,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.7,
+      "macro_f05": 0.8234440046223134,
+      "countries": {
+        "India": 0.7742194713168886,
+        "US": 0.857275489267549
+      },
+      "tp": 7223,
+      "fp": 192,
+      "fn": 3166,
+      "singleton_errors": 19,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.72,
+      "macro_f05": 0.8217262981610243,
+      "countries": {
+        "India": 0.7725312670113399,
+        "US": 0.8555375062965217
+      },
+      "tp": 7178,
+      "fp": 175,
+      "fn": 3211,
+      "singleton_errors": 17,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.74,
+      "macro_f05": 0.8197525749811313,
+      "countries": {
+        "India": 0.7694345737005324,
+        "US": 0.8543355882347264
+      },
+      "tp": 7130,
+      "fp": 161,
+      "fn": 3259,
+      "singleton_errors": 17,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.76,
+      "macro_f05": 0.8170201880329452,
+      "countries": {
+        "India": 0.764003176491497,
+        "US": 0.8534582015895537
+      },
+      "tp": 7069,
+      "fp": 142,
+      "fn": 3320,
+      "singleton_errors": 16,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.78,
+      "macro_f05": 0.8150986109311069,
+      "countries": {
+        "India": 0.7612709972294295,
+        "US": 0.8520937425078501
+      },
+      "tp": 7007,
+      "fp": 128,
+      "fn": 3382,
+      "singleton_errors": 14,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.8,
+      "macro_f05": 0.8099433475785599,
+      "countries": {
+        "India": 0.7522043682785942,
+        "US": 0.8496267180535644
+      },
+      "tp": 6913,
+      "fp": 114,
+      "fn": 3476,
+      "singleton_errors": 13,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.82,
+      "macro_f05": 0.8046914853979891,
+      "countries": {
+        "India": 0.7416469679586715,
+        "US": 0.8480212943467214
+      },
+      "tp": 6831,
+      "fp": 103,
+      "fn": 3558,
+      "singleton_errors": 12,
+      "singletons": 156
+    },
+    {
+      "weight_b": 0.75,
+      "threshold": 0.84,
+      "macro_f05": 0.7985259266931498,
+      "countries": {
+        "India": 0.7294410023522625,
+        "US": 0.8460072413976292
+      },
+      "tp": 6726,
+      "fp": 89,
+      "fn": 3663,
+      "singleton_errors": 11,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.2,
+      "macro_f05": 0.7933932593755051,
+      "countries": {
+        "India": 0.7662683049626514,
+        "US": 0.81203594457939
+      },
+      "tp": 8015,
+      "fp": 1186,
+      "fn": 2374,
+      "singleton_errors": 68,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.22,
+      "macro_f05": 0.7989599432254536,
+      "countries": {
+        "India": 0.769562837019605,
+        "US": 0.8191642535649063
+      },
+      "tp": 7966,
+      "fp": 1060,
+      "fn": 2423,
+      "singleton_errors": 64,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.24,
+      "macro_f05": 0.8047481272772378,
+      "countries": {
+        "India": 0.7747400407746609,
+        "US": 0.8253723577081424
+      },
+      "tp": 7928,
+      "fp": 948,
+      "fn": 2461,
+      "singleton_errors": 58,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.26,
+      "macro_f05": 0.8091240140874801,
+      "countries": {
+        "India": 0.7777297021004608,
+        "US": 0.8307009821685474
+      },
+      "tp": 7894,
+      "fp": 865,
+      "fn": 2495,
+      "singleton_errors": 54,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.28,
+      "macro_f05": 0.8115049196320305,
+      "countries": {
+        "India": 0.7779292954229069,
+        "US": 0.8345810798027558
+      },
+      "tp": 7808,
+      "fp": 781,
+      "fn": 2581,
+      "singleton_errors": 50,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.3,
+      "macro_f05": 0.8146964147941244,
+      "countries": {
+        "India": 0.7796434873299959,
+        "US": 0.8387879093729573
+      },
+      "tp": 7783,
+      "fp": 712,
+      "fn": 2606,
+      "singleton_errors": 48,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.32,
+      "macro_f05": 0.8165632439018773,
+      "countries": {
+        "India": 0.7809736050955731,
+        "US": 0.8410236143300571
+      },
+      "tp": 7757,
+      "fp": 673,
+      "fn": 2632,
+      "singleton_errors": 44,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.34,
+      "macro_f05": 0.8184632757225093,
+      "countries": {
+        "India": 0.7824093218169061,
+        "US": 0.8432427648522319
+      },
+      "tp": 7723,
+      "fp": 635,
+      "fn": 2666,
+      "singleton_errors": 42,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.36,
+      "macro_f05": 0.8195365649647108,
+      "countries": {
+        "India": 0.7832527845835091,
+        "US": 0.8444740113234446
+      },
+      "tp": 7702,
+      "fp": 603,
+      "fn": 2687,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.362,
+      "macro_f05": 0.8195817861908531,
+      "countries": {
+        "India": 0.7833638023236293,
+        "US": 0.8444740113234446
+      },
+      "tp": 7699,
+      "fp": 600,
+      "fn": 2690,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.38,
+      "macro_f05": 0.8201443343114497,
+      "countries": {
+        "India": 0.7829814483305313,
+        "US": 0.8456859803568281
+      },
+      "tp": 7670,
+      "fp": 566,
+      "fn": 2719,
+      "singleton_errors": 40,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.4,
+      "macro_f05": 0.8210322744166958,
+      "countries": {
+        "India": 0.7834108231239133,
+        "US": 0.8468890873974496
+      },
+      "tp": 7633,
+      "fp": 528,
+      "fn": 2756,
+      "singleton_errors": 38,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.42,
+      "macro_f05": 0.8216773188693627,
+      "countries": {
+        "India": 0.7838345880087579,
+        "US": 0.8476862148826693
+      },
+      "tp": 7604,
+      "fp": 499,
+      "fn": 2785,
+      "singleton_errors": 37,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.44,
+      "macro_f05": 0.8222729590879221,
+      "countries": {
+        "India": 0.7827113983602744,
+        "US": 0.8494631881144606
+      },
+      "tp": 7573,
+      "fp": 464,
+      "fn": 2816,
+      "singleton_errors": 37,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.46,
+      "macro_f05": 0.8241605064419837,
+      "countries": {
+        "India": 0.7824801590074685,
+        "US": 0.8528069544537821
+      },
+      "tp": 7550,
+      "fp": 426,
+      "fn": 2839,
+      "singleton_errors": 33,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.48,
+      "macro_f05": 0.8250564492545103,
+      "countries": {
+        "India": 0.7822530616353779,
+        "US": 0.8544747505315519
+      },
+      "tp": 7526,
+      "fp": 394,
+      "fn": 2863,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.5,
+      "macro_f05": 0.8247935939366988,
+      "countries": {
+        "India": 0.7820670726470523,
+        "US": 0.8541590658241837
+      },
+      "tp": 7501,
+      "fp": 375,
+      "fn": 2888,
+      "singleton_errors": 31,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.52,
+      "macro_f05": 0.825576066010366,
+      "countries": {
+        "India": 0.78251565280049,
+        "US": 0.8551710181714843
+      },
+      "tp": 7475,
+      "fp": 350,
+      "fn": 2914,
+      "singleton_errors": 30,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.54,
+      "macro_f05": 0.8259225397095272,
+      "countries": {
+        "India": 0.7812807326688611,
+        "US": 0.8566043665957446
+      },
+      "tp": 7455,
+      "fp": 331,
+      "fn": 2934,
+      "singleton_errors": 29,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.56,
+      "macro_f05": 0.8262696907795053,
+      "countries": {
+        "India": 0.7810857211140823,
+        "US": 0.8573241401221074
+      },
+      "tp": 7430,
+      "fp": 315,
+      "fn": 2959,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.58,
+      "macro_f05": 0.8253216448840143,
+      "countries": {
+        "India": 0.7788472777820308,
+        "US": 0.8572629703050625
+      },
+      "tp": 7395,
+      "fp": 293,
+      "fn": 2994,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.6,
+      "macro_f05": 0.824750572410609,
+      "countries": {
+        "India": 0.7779593550749916,
+        "US": 0.856909665540038
+      },
+      "tp": 7366,
+      "fp": 281,
+      "fn": 3023,
+      "singleton_errors": 27,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.62,
+      "macro_f05": 0.8243616637713803,
+      "countries": {
+        "India": 0.7777480696205501,
+        "US": 0.8563986784239759
+      },
+      "tp": 7344,
+      "fp": 264,
+      "fn": 3045,
+      "singleton_errors": 26,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.64,
+      "macro_f05": 0.8242063594172017,
+      "countries": {
+        "India": 0.7772706778670648,
+        "US": 0.856464741225001
+      },
+      "tp": 7313,
+      "fp": 247,
+      "fn": 3076,
+      "singleton_errors": 24,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.66,
+      "macro_f05": 0.824867866486647,
+      "countries": {
+        "India": 0.7766372470938131,
+        "US": 0.8580162449444889
+      },
+      "tp": 7282,
+      "fp": 228,
+      "fn": 3107,
+      "singleton_errors": 20,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.665,
+      "macro_f05": 0.8248836115158982,
+      "countries": {
+        "India": 0.7761461809137278,
+        "US": 0.8583803157880311
+      },
+      "tp": 7268,
+      "fp": 221,
+      "fn": 3121,
+      "singleton_errors": 19,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.68,
+      "macro_f05": 0.8237166497828796,
+      "countries": {
+        "India": 0.7753736295493839,
+        "US": 0.8569422801120876
+      },
+      "tp": 7243,
+      "fp": 208,
+      "fn": 3146,
+      "singleton_errors": 19,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.7,
+      "macro_f05": 0.8226700600104202,
+      "countries": {
+        "India": 0.7743588454267021,
+        "US": 0.8558738306635718
+      },
+      "tp": 7207,
+      "fp": 194,
+      "fn": 3182,
+      "singleton_errors": 18,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.72,
+      "macro_f05": 0.8201906371269233,
+      "countries": {
+        "India": 0.7704949057229669,
+        "US": 0.8543459710839731
+      },
+      "tp": 7149,
+      "fp": 179,
+      "fn": 3240,
+      "singleton_errors": 17,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.74,
+      "macro_f05": 0.8189791057052,
+      "countries": {
+        "India": 0.7671934804047521,
+        "US": 0.854570800934192
+      },
+      "tp": 7102,
+      "fp": 161,
+      "fn": 3287,
+      "singleton_errors": 16,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.76,
+      "macro_f05": 0.8165660438421397,
+      "countries": {
+        "India": 0.7635782505475887,
+        "US": 0.85298397601646
+      },
+      "tp": 7047,
+      "fp": 147,
+      "fn": 3342,
+      "singleton_errors": 16,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.78,
+      "macro_f05": 0.8116432236121527,
+      "countries": {
+        "India": 0.7562481956464294,
+        "US": 0.8497156219103045
+      },
+      "tp": 6967,
+      "fp": 135,
+      "fn": 3422,
+      "singleton_errors": 16,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.8,
+      "macro_f05": 0.807845067335638,
+      "countries": {
+        "India": 0.7498990503657964,
+        "US": 0.847670732542132
+      },
+      "tp": 6900,
+      "fp": 122,
+      "fn": 3489,
+      "singleton_errors": 15,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.82,
+      "macro_f05": 0.8030579903650973,
+      "countries": {
+        "India": 0.740687537942285,
+        "US": 0.8459245217828008
+      },
+      "tp": 6816,
+      "fp": 110,
+      "fn": 3573,
+      "singleton_errors": 13,
+      "singletons": 156
+    },
+    {
+      "weight_b": 1.0,
+      "threshold": 0.84,
+      "macro_f05": 0.7975969989422051,
+      "countries": {
+        "India": 0.7286017203942057,
+        "US": 0.8450167010713702
+      },
+      "tp": 6725,
+      "fp": 98,
+      "fn": 3664,
+      "singleton_errors": 12,
+      "singletons": 156
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "references": 1732544,
+  "pairs": 138530079,
+  "countries": {
+    "France": 259452,
+    "India": 809986,
+    "US": 663106
+  },
+  "changed_vs_B_0665": {
+    "France": 0,
+    "India": 109536,
+    "US": 47730
+  },
+  "sha256": "e25297c18e885b83107156656e88769d4eb021bcdd328f35de84652038aa8fca",
+  "seconds": 198.77051327499794,
+  "candidate_source": "/home/a/Projects/Amazon ML hackathon/reports/rescored_v3_submission/candidate_pairs.tsv",
+  "checks": "Exact verified cache feature/candidate hashes; model hashes; schema; unique complete test references; offsets; no duplicate candidate IDs; matches subset; France unchanged"
+}

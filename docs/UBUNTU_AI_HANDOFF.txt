@@ -1,0 +1,94 @@
+UBUNTU AI HANDOFF — PROTECT FIRST SUBMISSION, EXPORT FEATURES, RESCORE ONE CHALLENGER
+Prepared 2026-09-27. This is the active-machine execution prompt.
+
+MISSION AND PRIORITY
+1. Preserve and finish the existing V3 test-inference run.
+2. Export a compact train/tuning feature packet for the RTX laptop without starving inference.
+3. Receive one frozen challenger, evaluate it fairly, and rescore cached test features if justified.
+4. Deliver valid submission files and a reproducible package. A 0.98 target is not guaranteed.
+
+CRITICAL PATH DISTINCTION
+The LIVE RUN is in:
+/home/a/Projects/Amazon ML hackathon
+The Codex editing checkout may be:
+/home/a/.codex/worktrees/dc00/Amazon ML hackathon
+Do not assume the current directory contains the live data. Inspect paths before running commands. Changes in a worktree do not automatically update the active original checkout. Do not start a second baseline run in either location.
+
+FIRST ACTION: READ STATUS, DO NOT RESTART
+Live files relative to the original project:
+- data/processed/inference_runs/v3_first_submission/status.json
+- data/processed/inference_runs/v3_first_submission/manifest.json
+- reports/submission_v3_run.log
+- data/processed/inference_runs/v3_first_submission/batches/
+At handoff the run had passed 426,452 / 1,732,544 references and was in India; this is historical, not current status. Check modification times and advancing batch counts. An old state='running' alone does not prove a process is alive.
+The authorized runner is scripts/run_submission.py. The older run_phase6_test_inference.py is only a flawed benchmark, not the production runner.
+
+FROZEN RUN: DO NOT EDIT ITS CODE OR INPUTS
+- src/business_entity_resolution/inference_features.py
+- src/business_entity_resolution/normalize.py
+- scripts/run_submission.py
+- models/experiment_v3_challenger.pkl
+- data/processed/test_inference_verified.sqlite
+The manifest hashes model, code, normalization, inputs and settings. Editing these breaks safe resume. Implement exporter/rescorer in NEW files.
+The older phase6_test_targets.sqlite incorrectly stored RAW strings in normalized columns. Never reuse it. test_inference_verified.sqlite is the corrected database.
+The runner saves features.npy, probabilities.npy, candidate_pairs.tsv, matching_results.tsv and batch.json for each atomic completed batch. Candidate row order plus cumulative list lengths determines feature-row order.
+If the run is actually stopped, inspect its error before using the documented resume command from the live project:
+.venv/bin/python -u scripts/run_submission.py --resume --workers 4
+Do not change batch size or run identity. Do not delete existing outputs/checkpoints.
+
+TRACK A — FINISH AND VALIDATE
+- Monitor progress, per-country throughput, free disk and total available RAM. Include indexing, output writing, assembly and validation in ETA estimates; don't extrapolate only France or claim a guaranteed completion time.
+- Keep laptop on power and prevent suspend through authorized user settings. Do not stop unrelated applications automatically.
+- Final outputs are under data/processed/inference_runs/v3_first_submission/output/.
+- Require status.state='validated', validation.json and validator.log before labeling outputs ready.
+- The official validator retains full candidate mappings in RAM. The runner applies the unchanged official checks batchwise, then streams complete assembled output coverage, duplicate checks, target-ID existence and match-subset checks. Do not launch the memory-heavy full candidate validator blindly.
+- Official format: matching_results.tsv with source1_entity_id, matched_entity_ids; candidate_pairs.tsv with source1_entity_id, candidate_entity_ids. Both tab-separated; every test reference exactly once, including France and empty lists.
+- matching_results.tsv is the live leaderboard upload; both files belong in the final code/methodology package. Do not upload to the portal unless the user explicitly instructs it.
+- Notify the user when the first file is ready. Do not delay a valid V3 upload for the challenger.
+
+TRACK B — EXPORT THE GPU FEATURE PACKET (NEW SCRIPT)
+Implement scripts/export_gpu_feature_packet.py and follow docs/TWO_MACHINE_TRANSFER.md exactly.
+Use existing 5,000 TRAIN references, 2,000 seed-2029 tuning references, and reserve the seed-2027 secondary-dev data locally for confirmation.
+Inputs in the LIVE PROJECT:
+- data/processed/phase4_train_text.sqlite: complete train targets and sampled train reference text.
+- data/processed/phase2_baseline_dev.sqlite: dev records.
+- data/processed/phase2_split.sqlite: assignments.
+- data/processed/phase4_train_sample_ids.json
+- data/processed/phase4_dev_tuning_ids.json
+- data/processed/phase3_pilot_sample_ids.json: seed 2027, NOT seed 2026.
+- original train_ground_truth.tsv / audited truth DB.
+- models/experiment_v3_challenger.pkl and its exact selected threshold 0.25.
+Read schemas first. Do not assume feature matrices were saved by prior experiment scripts; verify artifacts rather than regenerating unnecessarily.
+
+Exporter requirements:
+- Keep 22 features exactly equal to inference_features.py. A cached-feature packet is worthless if feature order changes.
+- Preserve country-wise retrieval, five informative tokens, max DF 5,000 / 5%, top 50 per token route plus exact matches, deterministic target-ID tie ordering.
+- Reuse stored candidate artifacts where available (secondary-dev candidate ZIP exists). For train/tuning, regenerate only if necessary and save candidates/features so this work is done once.
+- Never generate candidates using labels. Load labels after candidate generation. Include all retrieved positives and realistic retrieved negatives; no artificial balancing or positive injection.
+- Preserve reference IDs with zero candidates and true targets not retrieved.
+- Use batch/disk storage and at most one feature worker initially. Check combined system memory during index construction, not just before it. Reserve at least 2 GiB available RAM; if exporting competes with inference, pause/defer exporter, not the baseline job.
+- Do not index all training countries concurrently. Do not increase training size now.
+- Save V3 tuning probabilities using the same candidate rows for a fair comparison on the RTX laptop. No tuning truth may enter fitting on train.
+- Atomic export, SHA-256 inventory, feature parity tests, strict partition/ID coverage, and no silent missing rows.
+- Transfer the small verified packet privately. It is deliberately excluded from Git.
+
+TRACK C — RECEIVE AND EVALUATE CHALLENGER
+- Use native CatBoost model.cbm, metadata and parity fixture. Verify feature order, positive class, packet identity, CPU prediction parity and chosen tuning threshold.
+- Keep V3 outputs/model unchanged.
+- Evaluate the locked model once on the existing secondary-dev sample. Report actual per-reference F0.5, TP/FP/FN, US/India scores and singleton false positives. This sample is already inspected and is NOT a fresh holdout.
+- If promising, choose one bounded holdout confirmation checkpoint; never train/tune on those labels or mislabel holdout output as submission data. Clearly document its target-pool scope.
+- Do not accept a model on pair-level accuracy, theory, or a claimed 0.98 goal. If evidence is inconclusive, retain V3.
+
+TRACK D — RESCORE CACHED TEST FEATURES (NEW SCRIPT)
+Implement scripts/rescore_submission.py only after basic export/trainer contracts are clear.
+- Read ONLY complete atomic baseline batch directories, verify their checksums and run identity, and leave them unchanged.
+- Load features.npy in bounded chunks. Reconstruct pair ordering using candidate_pairs.tsv and per-reference candidate counts; assert matrix row counts agree exactly.
+- Apply new model and its locked threshold. Preserve every reference, including zero-candidate rows.
+- Write new atomic batches under a separate challenger run directory. Bind resume identity to the challenger hash, threshold, feature schema and baseline run ID.
+- Candidate sets must be identical to those actually scored. Reuse/copy the same candidate output; do not filter it to predictions.
+- Do not launch another full test retrieval/string-feature run merely to change the classifier.
+- Require all expected references and full validation before presenting a challenger submission as ready. Do not mix different model versions in one final output.
+
+DELIVERABLES
+One concise status summary, validated first-submission paths when ready, feature packet ZIP + hashes, measured challenger comparison, separate challenger output if justified, reproducibility instructions and filled organizer methodology template. State unfinished work plainly.
+Do not repeat V3 feature experiments, perform broad tuning sweeps, promise 98%, or silently alter the running submission job.

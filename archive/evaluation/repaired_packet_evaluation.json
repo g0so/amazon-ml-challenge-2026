@@ -1,0 +1,304 @@
+{
+  "packet_sha256": "93ad38f1f3a0b02759bda6909ccc8a7cfe873068bd0996ea7a2352b2b26013a4",
+  "retrieval_config_sha256": "773e6505f41f33cc0d8d18011e8580b905f88615985b61403e3098477b458bf6",
+  "train": {
+    "references": 5000,
+    "pairs": 517417,
+    "positives": 16325,
+    "zero_candidate_queries": 0,
+    "feature_dtype": "float32"
+  },
+  "tune": {
+    "references": 2000,
+    "pairs": 206636,
+    "positives": 6530,
+    "zero_candidate_queries": 0,
+    "feature_dtype": "float32"
+  },
+  "confirmation": {
+    "references": 2000,
+    "pairs": 207012,
+    "positives": 6465,
+    "zero_candidate_queries": 0,
+    "feature_dtype": "float32"
+  },
+  "selected_threshold": 0.665,
+  "tune_metrics": {
+    "threshold": 0.665,
+    "macro_f05": 0.8917768789728375,
+    "tp": 5465,
+    "fp": 187,
+    "fn": 1467,
+    "retrieval_fn": 402,
+    "classifier_fn": 1065,
+    "singleton_references": 113,
+    "singleton_errors": 8,
+    "singleton_error_rate": 0.07079646017699115,
+    "country_breakdown": {
+      "India": {
+        "references": 789,
+        "tp": 2003,
+        "fp": 117,
+        "fn": 780,
+        "retrieval_fn": 265,
+        "macro_f05": 0.8444349231544463
+      },
+      "US": {
+        "references": 1211,
+        "tp": 3462,
+        "fp": 70,
+        "fn": 687,
+        "retrieval_fn": 137,
+        "macro_f05": 0.9226214728132262
+      }
+    },
+    "source_breakdown": {
+      "S2": {
+        "tp": 2646,
+        "fp": 109,
+        "fn": 654
+      },
+      "S3": {
+        "tp": 2819,
+        "fp": 78,
+        "fn": 813
+      }
+    }
+  },
+  "baseline_tune_threshold_and_metrics": {
+    "threshold": 0.745,
+    "macro_f05": 0.8806812509721541,
+    "tp": 5467,
+    "fp": 277,
+    "fn": 1465,
+    "retrieval_fn": 402,
+    "classifier_fn": 1063,
+    "singleton_references": 113,
+    "singleton_errors": 15,
+    "singleton_error_rate": 0.13274336283185842,
+    "country_breakdown": {
+      "India": {
+        "references": 789,
+        "tp": 2009,
+        "fp": 138,
+        "fn": 774,
+        "retrieval_fn": 265,
+        "macro_f05": 0.835922702953003
+      },
+      "US": {
+        "references": 1211,
+        "tp": 3458,
+        "fp": 139,
+        "fn": 691,
+        "retrieval_fn": 137,
+        "macro_f05": 0.9098426831662997
+      }
+    },
+    "source_breakdown": {
+      "S2": {
+        "tp": 2630,
+        "fp": 180,
+        "fn": 670
+      },
+      "S3": {
+        "tp": 2837,
+        "fp": 97,
+        "fn": 795
+      }
+    }
+  },
+  "confirmation_metrics": {
+    "macro_f05": 0.8891635672610834,
+    "tp": 5416,
+    "fp": 200,
+    "fn": 1455,
+    "retrieval_fn": 406,
+    "classifier_fn": 1049,
+    "singleton_references": 118,
+    "singleton_errors": 6,
+    "singleton_error_rate": 0.05084745762711865,
+    "country_breakdown": {
+      "India": {
+        "references": 796,
+        "tp": 1968,
+        "fp": 128,
+        "fn": 786,
+        "retrieval_fn": 281,
+        "macro_f05": 0.8392895814841004
+      },
+      "US": {
+        "references": 1204,
+        "tp": 3448,
+        "fp": 72,
+        "fn": 669,
+        "retrieval_fn": 125,
+        "macro_f05": 0.9221367339375605
+      }
+    },
+    "source_breakdown": {
+      "S2": {
+        "tp": 2644,
+        "fp": 115,
+        "fn": 663
+      },
+      "S3": {
+        "tp": 2772,
+        "fp": 85,
+        "fn": 792
+      }
+    }
+  },
+  "confirmation_candidate_oracle": {
+    "macro_f05": 0.9801586182966175,
+    "tp": 6465,
+    "fp": 0,
+    "fn": 406,
+    "retrieval_fn": 406,
+    "classifier_fn": 0,
+    "singleton_references": 118,
+    "singleton_errors": 0,
+    "singleton_error_rate": 0.0,
+    "country_breakdown": {
+      "India": {
+        "references": 796,
+        "tp": 2473,
+        "fp": 0,
+        "fn": 281,
+        "retrieval_fn": 281,
+        "macro_f05": 0.9671324216725586
+      },
+      "US": {
+        "references": 1204,
+        "tp": 3992,
+        "fp": 0,
+        "fn": 125,
+        "retrieval_fn": 125,
+        "macro_f05": 0.9887706220447493
+      }
+    },
+    "source_breakdown": {
+      "S2": {
+        "tp": 3126,
+        "fp": 0,
+        "fn": 181
+      },
+      "S3": {
+        "tp": 3339,
+        "fp": 0,
+        "fn": 225
+      }
+    }
+  },
+  "baseline_confirmation_metrics_same_candidates": {
+    "macro_f05": 0.8785668986990522,
+    "tp": 5404,
+    "fp": 320,
+    "fn": 1467,
+    "retrieval_fn": 406,
+    "classifier_fn": 1061,
+    "singleton_references": 118,
+    "singleton_errors": 10,
+    "singleton_error_rate": 0.0847457627118644,
+    "country_breakdown": {
+      "India": {
+        "references": 796,
+        "tp": 1958,
+        "fp": 176,
+        "fn": 796,
+        "retrieval_fn": 281,
+        "macro_f05": 0.8266660434679642
+      },
+      "US": {
+        "references": 1204,
+        "tp": 3446,
+        "fp": 144,
+        "fn": 671,
+        "retrieval_fn": 125,
+        "macro_f05": 0.9128800887023297
+      }
+    },
+    "source_breakdown": {
+      "S2": {
+        "tp": 2628,
+        "fp": 208,
+        "fn": 679
+      },
+      "S3": {
+        "tp": 2776,
+        "fp": 112,
+        "fn": 788
+      }
+    }
+  },
+  "fit_seconds": 15.192436399986036,
+  "validation_seconds": 17.28142050000315,
+  "best_iteration": 1050,
+  "parameters": {
+    "nan_mode": "Min",
+    "gpu_ram_part": 0.75,
+    "eval_metric": "Logloss",
+    "iterations": 1500,
+    "leaf_estimation_method": "Newton",
+    "observations_to_bootstrap": "TestOnly",
+    "od_pval": 0,
+    "random_score_type": "NormalWithModelSizeDecrease",
+    "grow_policy": "SymmetricTree",
+    "penalties_coefficient": 1,
+    "boosting_type": "Plain",
+    "feature_border_type": "GreedyLogSum",
+    "bayesian_matrix_reg": 0.10000000149011612,
+    "devices": "0",
+    "eval_fraction": 0,
+    "pinned_memory_bytes": "104857600",
+    "force_unit_auto_pair_weights": false,
+    "l2_leaf_reg": 3,
+    "random_strength": 1,
+    "od_type": "Iter",
+    "rsm": 1,
+    "boost_from_average": false,
+    "gpu_cat_features_storage": "GpuRam",
+    "fold_size_loss_normalization": false,
+    "model_size_reg": 0.5,
+    "pool_metainfo_options": {
+      "tags": {}
+    },
+    "use_best_model": true,
+    "meta_l2_frequency": 0,
+    "od_wait": 100,
+    "class_names": [
+      0,
+      1
+    ],
+    "random_seed": 2028,
+    "depth": 6,
+    "border_count": 128,
+    "min_fold_size": 100,
+    "data_partition": "DocParallel",
+    "bagging_temperature": 1,
+    "classes_count": 0,
+    "auto_class_weights": "None",
+    "leaf_estimation_backtracking": "AnyImprovement",
+    "best_model_min_trees": 1,
+    "min_data_in_leaf": 1,
+    "add_ridge_penalty_to_loss_function": false,
+    "loss_function": "Logloss",
+    "learning_rate": 0.05000000074505806,
+    "meta_l2_exponent": 1,
+    "score_function": "Cosine",
+    "task_type": "GPU",
+    "leaf_estimation_iterations": 10,
+    "bootstrap_type": "Bayesian",
+    "max_leaves": 64
+  },
+  "cpu_model_parity": {
+    "rows": 2048,
+    "max_abs_probability_difference": 0.0,
+    "threshold_decision_differences": 0
+  },
+  "resource_usage": {
+    "peak_process_working_set_mib": 652.6,
+    "minimum_available_host_ram_gib": 1.92,
+    "peak_gpu_memory_used_mib": 7117
+  },
+  "elapsed_seconds": 33.63294710000628
+}

@@ -1,0 +1,34 @@
+{
+  "archive": "/home/a/.codex/worktrees/dc00/Amazon ML hackathon/data/processed/gpu_feature_packet_v1.zip",
+  "bytes": 17567029,
+  "sha256": "4df9d74cac4da2f0a6967d63f67c257c378ae0130b8d5507fedfb0ea69a818b4",
+  "partitions": {
+    "train": {
+      "references": 5000,
+      "pairs": 406065,
+      "positives": 14476,
+      "negatives": 391589,
+      "all_true_links": 17167,
+      "v3_macro_f05_at_025": 0.7719611161005657,
+      "oracle_macro_f05": 0.9133524533769011,
+      "X_shape": [
+        406065,
+        22
+      ]
+    },
+    "tune": {
+      "references": 2000,
+      "pairs": 190199,
+      "positives": 6539,
+      "negatives": 183660,
+      "all_true_links": 6783,
+      "v3_macro_f05_at_025": 0.8839352147713383,
+      "oracle_macro_f05": 0.9840550739795284,
+      "X_shape": [
+        190199,
+        22
+      ]
+    }
+  },
+  "elapsed_seconds": 761.1456392359978
+}

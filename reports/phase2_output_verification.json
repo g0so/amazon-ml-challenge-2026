@@ -1,0 +1,18 @@
+{
+  "raw_exact": {
+    "rows": 331018,
+    "macro_f05": 0.055849573998133895,
+    "tp": 2,
+    "fp": 0,
+    "fn": 1145635,
+    "passed": true
+  },
+  "normalized_exact": {
+    "rows": 331018,
+    "macro_f05": 0.07352446467679888,
+    "tp": 9655,
+    "fp": 0,
+    "fn": 1135982,
+    "passed": true
+  }
+}

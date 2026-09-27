@@ -1,0 +1,77 @@
+RTX 5060 LAPTOP — AI IMPLEMENTATION HANDOFF
+HISTORICAL HANDOFF: superseded by docs/LUNA_RTX_EXECUTION_PROMPT.txt and docs/RECOVERY_PLAN_2026-09-27.md. The original one-experiment limit no longer applies.
+Prepared 2026-09-27. Read this whole file before changing code.
+
+MISSION
+Train ONE CatBoost challenger on our existing 22 numeric pair features while the Ubuntu machine completes the first submission. The six-hour objective is a valid submission plus one defensible improvement, not an unbounded model search. A 0.98 F0.5 result is an aspiration, not a promised outcome.
+
+You may implement, test, and run this bounded experiment locally. Do not upload to the competition portal. Do not edit the Ubuntu inference runner or ask the user to stop it. Keep all changes on a separate branch (e.g. codex/gpu-challenger) and add new scripts rather than modifying frozen V3 files.
+
+CURRENT POSITION
+- Task: return all matching S2/S3 IDs per S1 reference, including empty sets.
+- Official metric: mean per-reference F0.5; not pair-level F-score or accuracy.
+- Current model: V3 Full logistic regression, 22 features, threshold 0.25.
+- Training: retrieved pairs from 5,000 TRAIN references, not the whole training set.
+- Tuning: 2,000 DEV references, seed 2029.
+- Secondary dev check: 2,000 different references, seed 2027; already examined repeatedly, NOT an untouched test set.
+- V3 secondary-dev macro F0.5: 0.8787628377362674.
+- Retrieval on that sample: 6,654 / 6,946 true links; oracle 0.9844689351252445.
+- Holdout remains reserved. Do not access it or organizer test labels (none are supplied).
+
+READ FIRST
+Official student_resource/README.md and guidelines; reports/phase4_experiment_v3_results.json; src/business_entity_resolution/inference_features.py; docs/TWO_MACHINE_TRANSFER.md. Locate the original student_resource directory from project_config.json. If rules/PDFs are absent, request them rather than inventing restrictions. No external business lookup or enrichment.
+
+WHAT CLONING DOES NOT PROVIDE
+Git does not include raw datasets, processed SQLite databases, feature caches, or .venv. Do NOT rebuild all retrieval on this laptop merely because those folders are absent. Wait for the compact feature packet exported by Ubuntu. You can implement/test the trainer with synthetic fixtures while waiting; label synthetic results explicitly.
+
+STEP 1 — SETUP, MAXIMUM 30–45 MINUTES
+- Identify OS, Python, NVIDIA driver and actual GPU VRAM using nvidia-smi.
+- Create a fresh local environment. Do not copy Ubuntu's .venv.
+- Install compatible official CatBoost/NumPy packages and record actual versions. The project's requirements.txt reflects Ubuntu; don't assume every pin transfers to Windows.
+- Run a tiny two-class CatBoost GPU smoke test using task_type='GPU', devices='0'. Record elapsed time and GPU memory. Confirm GPU use rather than assuming it from configuration.
+- No custom CUDA kernels, neural encoders, or builds from source. If GPU setup takes more than 45 minutes, fall back to CatBoost CPU on THIS laptop and explain the blocker. Avoid diverting the Ubuntu submission process.
+- Official references: https://catboost.ai/docs/en/features/training-on-gpu and https://catboost.ai/docs/en/concepts/python-installation
+
+STEP 2 — ACCEPT THE FEATURE PACKET
+See the precise schema in docs/TWO_MACHINE_TRANSFER.md.
+- Verify SHA-256 hashes, 22 feature names/order, shapes, finite values, unique reference IDs, disjoint partitions, and pair-offset coverage.
+- Ground-truth labels must correspond to candidate IDs. Confirm class labels are 0/1 and both classes exist in TRAIN.
+- Every reference must be represented, including zero-candidate references and singletons. Do not infer truth counts from positives among candidates: missed positives still count as false negatives.
+- No features derived from labels, reference IDs, true match counts, or validation outcomes. Country is diagnostic metadata, not an extra feature in this experiment.
+- Do not fabricate missing inputs, reconstruct our saved samples from guessed seeds, rebalance automatically, or inject missing true targets into candidates.
+
+STEP 3 — ONE CONTROLLED CHALLENGER
+Use CatBoostClassifier with Logloss, task_type='GPU' after the smoke test succeeds, random_seed=2028, and no class balancing initially. Start with depth=6, learning_rate=0.05, iterations=800, l2_leaf_reg=3. These are starting settings, not optimal claims. Bound GPU RAM allocation if supported and retain headroom.
+- Fit on TRAIN only. Use tuning pairs for early stopping if available (e.g. 80-round patience); record the chosen iteration. This makes the tuning set a model-selection set, not an unbiased score.
+- Start with the EXISTING 5,000-reference dataset. Do not demand full training data or build 146 million pairs.
+- Log train pair count, positives/negatives, actual fit time, memory, device, library versions, settings and warnings. GPU fitting can be nondeterministic; persist the exact fitted model.
+- Predict tuning probabilities in batches. Select a threshold by official per-reference macro F0.5, with an explicit predict-none option. Use a declared bounded search (e.g. 0.01 steps, then a local 0.002 refinement on tuning only). Record the full search and deterministic tie rule.
+- Do not optimize sklearn's pair-level F-beta or CatBoost's pairwise F-score as the competition metric.
+
+SCORING CONTRACT
+For each required reference, truth=all labeled target IDs; prediction=its retrieved candidates passing the threshold.
+F0.5 = 1.25*TP / (1.25*TP + FP + 0.25*FN).
+Both truth and prediction empty -> 1; truth empty with any prediction -> 0.
+Average over ALL required references. Require exact prediction coverage and explicit truth coverage; missing rows are errors. An oracle filters candidates with truth ONLY for diagnostic evaluation, never for inference.
+
+STEP 4 — CHOOSE USING TUNING; RETURN ONE MODEL
+Compare against V3 ON THE SAME tuning references and candidate pool using supplied V3 probabilities. Report macro F0.5, TP/FP/FN, precision/recall, country scores and singleton false-positive rate. Do not compare its tuning score with V3's secondary-dev score.
+Return the frozen challenger to Ubuntu for one secondary-dev evaluation. Do not tune to seed-2027 errors or ask for many rounds of evaluation feedback.
+If it fails to improve tuning, retain V3 and report that. If a training-size experiment is authorized after the first result, request a new 20,000-reference packet; changing TRAIN_SAMPLE_SIZE alone does not update the current cached train DB. Do not start that expansion automatically.
+
+RETURN PACKAGE — NATIVE MODEL FORMAT, NOT JUST A PICKLE
+Create artifacts/gpu_challenger/ with:
+- model.cbm, saved in CatBoost's native format.
+- metadata.json: selected threshold, 22 feature names/order, input-packet SHA-256, split/sample hashes, versions, seed, device, complete parameters, iteration count and timing.
+- tuning_results.json and threshold_search.csv.
+- tuning_predictions.jsonl: every reference with predicted IDs, including empty lists.
+- parity_inputs.npy and parity_probabilities.npy: a small fixed numeric feature batch and corresponding class-1 probabilities.
+- README.md with exact training and CPU-inference commands and the positive-class convention.
+- pinned minimal environment file and the new training/scoring source code.
+Zip it and send it privately to the Ubuntu operator. Verify that native-model CPU inference works and matches GPU-produced probabilities within a stated tolerance; report any threshold-decision differences.
+
+BOUNDARIES
+Do not promise 0.98, choose a winner from theory alone, call a secondary-dev result untouched-test performance, or replace string-feature definitions. Changing the 22 features invalidates our cached test matrices. Do not use internal holdout predictions as submission data. No heavy hyperparameter sweep. Stop after returning the first measured challenger.
+
+FIRST RESPONSE EXPECTED
+Confirm the exact local setup, identify whether the feature packet is present, and begin the GPU smoke test plus trainer implementation. Ask only for genuinely missing artifacts; do not send another long speculative plan.

@@ -1,0 +1,444 @@
+{
+  "configs": {
+    "Baseline": {
+      "oracle": {
+        "macro": 0.8903256258536971,
+        "tp": 5644,
+        "fp": 0,
+        "fn": 1272,
+        "singleton_fp_rate": 0.0,
+        "cand_med": 3,
+        "cand_p95": 6
+      },
+      "source_distribution": {
+        "S2": 138414,
+        "S3": 21972
+      },
+      "retrieval_fn_examples": [
+        {
+          "query": "S1-101146047",
+          "missed_target": "S3-536621421",
+          "route_name": "Baseline",
+          "q_name": "shivani solutions private limited",
+          "q_addr": "19/203 near old police station kalyanpuri, delhi, new delhi"
+        },
+        {
+          "query": "S1-108420076",
+          "missed_target": "S2-481842952",
+          "route_name": "Baseline",
+          "q_name": "super trading limited",
+          "q_addr": "92/7, karnal, nissing, karnal, haryana"
+        },
+        {
+          "query": "S1-113394670",
+          "missed_target": "S2-527848464",
+          "route_name": "Baseline",
+          "q_name": "dream trading private limited",
+          "q_addr": "shop no.01, sai darshan compound, ganesh nagar, western express highway, borivali east, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-118456573",
+          "missed_target": "S2-710598303",
+          "route_name": "Baseline",
+          "q_name": "silver infotech private limited",
+          "q_addr": "p-block, f-block, indoor stadium, noida sector 21 a, noida, gautam buddha nagar, uttar pradesh"
+        },
+        {
+          "query": "S1-126975633",
+          "missed_target": "S3-819618220",
+          "route_name": "Baseline",
+          "q_name": "royal ventures private limited",
+          "q_addr": "m-215, greater kailash-ii, greater kailash, south delhi, delhi"
+        },
+        {
+          "query": "S1-128453941",
+          "missed_target": "S3-865566740",
+          "route_name": "Baseline",
+          "q_name": "bangalore north exports",
+          "q_addr": "429, 3rd crs, devsandra, chikamaranahalli, rs ngr, bangalore north, bangalore, karnataka"
+        },
+        {
+          "query": "S1-135647113",
+          "missed_target": "S3-924831412",
+          "route_name": "Baseline",
+          "q_name": "ahmedabad hospitality",
+          "q_addr": "gujarat, f f 108 satyamev eminence, ahmedabad, science city road"
+        },
+        {
+          "query": "S1-137722364",
+          "missed_target": "S3-361809813",
+          "route_name": "Baseline",
+          "q_name": "prime consultants private limited",
+          "q_addr": "809a 19a 1 thakur village road poisar, kandivali east, 1st-flr building no 2 tw gardens, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-151287235",
+          "missed_target": "S2-657287506",
+          "route_name": "Baseline",
+          "q_name": "baba marketing private limited",
+          "q_addr": "253/1, bhim garh kheri, gurgaon, gurgaon, haryana"
+        },
+        {
+          "query": "S1-167712516",
+          "missed_target": "S2-438645406",
+          "route_name": "Baseline",
+          "q_name": "tirupati marketing private limited",
+          "q_addr": "101, 1st floor, hari niwas gokul bldg, naupada, thane, maharashtra"
+        }
+      ],
+      "runtime_sec": 170.8
+    },
+    "A_ExactBuckets": {
+      "oracle": {
+        "macro": 0.9200759498509264,
+        "tp": 5830,
+        "fp": 0,
+        "fn": 1086,
+        "singleton_fp_rate": 0.0,
+        "cand_med": 3,
+        "cand_p95": 6
+      },
+      "source_distribution": {
+        "S2": 142411,
+        "S3": 24973
+      },
+      "retrieval_fn_examples": [
+        {
+          "query": "S1-101146047",
+          "missed_target": "S3-993666409",
+          "route_name": "A_ExactBuckets",
+          "q_name": "shivani solutions private limited",
+          "q_addr": "19/203 near old police station kalyanpuri, delhi, new delhi"
+        },
+        {
+          "query": "S1-108420076",
+          "missed_target": "S2-481842952",
+          "route_name": "A_ExactBuckets",
+          "q_name": "super trading limited",
+          "q_addr": "92/7, karnal, nissing, karnal, haryana"
+        },
+        {
+          "query": "S1-113394670",
+          "missed_target": "S2-527848464",
+          "route_name": "A_ExactBuckets",
+          "q_name": "dream trading private limited",
+          "q_addr": "shop no.01, sai darshan compound, ganesh nagar, western express highway, borivali east, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-118456573",
+          "missed_target": "S2-710598303",
+          "route_name": "A_ExactBuckets",
+          "q_name": "silver infotech private limited",
+          "q_addr": "p-block, f-block, indoor stadium, noida sector 21 a, noida, gautam buddha nagar, uttar pradesh"
+        },
+        {
+          "query": "S1-126975633",
+          "missed_target": "S2-344256462",
+          "route_name": "A_ExactBuckets",
+          "q_name": "royal ventures private limited",
+          "q_addr": "m-215, greater kailash-ii, greater kailash, south delhi, delhi"
+        },
+        {
+          "query": "S1-128453941",
+          "missed_target": "S3-865566740",
+          "route_name": "A_ExactBuckets",
+          "q_name": "bangalore north exports",
+          "q_addr": "429, 3rd crs, devsandra, chikamaranahalli, rs ngr, bangalore north, bangalore, karnataka"
+        },
+        {
+          "query": "S1-135647113",
+          "missed_target": "S3-924831412",
+          "route_name": "A_ExactBuckets",
+          "q_name": "ahmedabad hospitality",
+          "q_addr": "gujarat, f f 108 satyamev eminence, ahmedabad, science city road"
+        },
+        {
+          "query": "S1-137722364",
+          "missed_target": "S3-361809813",
+          "route_name": "A_ExactBuckets",
+          "q_name": "prime consultants private limited",
+          "q_addr": "809a 19a 1 thakur village road poisar, kandivali east, 1st-flr building no 2 tw gardens, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-151287235",
+          "missed_target": "S2-657287506",
+          "route_name": "A_ExactBuckets",
+          "q_name": "baba marketing private limited",
+          "q_addr": "253/1, bhim garh kheri, gurgaon, gurgaon, haryana"
+        },
+        {
+          "query": "S1-167712516",
+          "missed_target": "S2-438645406",
+          "route_name": "A_ExactBuckets",
+          "q_name": "tirupati marketing private limited",
+          "q_addr": "101, 1st floor, hari niwas gokul bldg, naupada, thane, maharashtra"
+        }
+      ],
+      "runtime_sec": 171.0
+    },
+    "B_JointScoring": {
+      "oracle": {
+        "macro": 0.9368507245148406,
+        "tp": 6015,
+        "fp": 0,
+        "fn": 901,
+        "singleton_fp_rate": 0.0,
+        "cand_med": 3,
+        "cand_p95": 6
+      },
+      "source_distribution": {
+        "S2": 82536,
+        "S3": 23092
+      },
+      "retrieval_fn_examples": [
+        {
+          "query": "S1-101146047",
+          "missed_target": "S2-566616134",
+          "route_name": "B_JointScoring",
+          "q_name": "shivani solutions private limited",
+          "q_addr": "19/203 near old police station kalyanpuri, delhi, new delhi"
+        },
+        {
+          "query": "S1-108420076",
+          "missed_target": "S2-481842952",
+          "route_name": "B_JointScoring",
+          "q_name": "super trading limited",
+          "q_addr": "92/7, karnal, nissing, karnal, haryana"
+        },
+        {
+          "query": "S1-113394670",
+          "missed_target": "S2-527848464",
+          "route_name": "B_JointScoring",
+          "q_name": "dream trading private limited",
+          "q_addr": "shop no.01, sai darshan compound, ganesh nagar, western express highway, borivali east, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-118456573",
+          "missed_target": "S2-710598303",
+          "route_name": "B_JointScoring",
+          "q_name": "silver infotech private limited",
+          "q_addr": "p-block, f-block, indoor stadium, noida sector 21 a, noida, gautam buddha nagar, uttar pradesh"
+        },
+        {
+          "query": "S1-126975633",
+          "missed_target": "S2-344256462",
+          "route_name": "B_JointScoring",
+          "q_name": "royal ventures private limited",
+          "q_addr": "m-215, greater kailash-ii, greater kailash, south delhi, delhi"
+        },
+        {
+          "query": "S1-128453941",
+          "missed_target": "S3-865566740",
+          "route_name": "B_JointScoring",
+          "q_name": "bangalore north exports",
+          "q_addr": "429, 3rd crs, devsandra, chikamaranahalli, rs ngr, bangalore north, bangalore, karnataka"
+        },
+        {
+          "query": "S1-132363675",
+          "missed_target": "S3-12362918",
+          "route_name": "B_JointScoring",
+          "q_name": "(india) mkj travels pvt. ltd.",
+          "q_addr": "opp. hotel country inn near bhaiwala chowk, ferozepur road, ludhiana, punjab"
+        },
+        {
+          "query": "S1-137722364",
+          "missed_target": "S3-361809813",
+          "route_name": "B_JointScoring",
+          "q_name": "prime consultants private limited",
+          "q_addr": "809a 19a 1 thakur village road poisar, kandivali east, 1st-flr building no 2 tw gardens, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-151287235",
+          "missed_target": "S2-657287506",
+          "route_name": "B_JointScoring",
+          "q_name": "baba marketing private limited",
+          "q_addr": "253/1, bhim garh kheri, gurgaon, gurgaon, haryana"
+        },
+        {
+          "query": "S1-167712516",
+          "missed_target": "S2-438645406",
+          "route_name": "B_JointScoring",
+          "q_name": "tirupati marketing private limited",
+          "q_addr": "101, 1st floor, hari niwas gokul bldg, naupada, thane, maharashtra"
+        }
+      ],
+      "runtime_sec": 170.9
+    },
+    "C1_MaxDF_20k": {
+      "oracle": {
+        "macro": 0.9760798874715717,
+        "tp": 6468,
+        "fp": 0,
+        "fn": 448,
+        "singleton_fp_rate": 0.0,
+        "cand_med": 3,
+        "cand_p95": 6
+      },
+      "source_distribution": {
+        "S2": 72280,
+        "S3": 34296
+      },
+      "retrieval_fn_examples": [
+        {
+          "query": "S1-101146047",
+          "missed_target": "S2-566616134",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "shivani solutions private limited",
+          "q_addr": "19/203 near old police station kalyanpuri, delhi, new delhi"
+        },
+        {
+          "query": "S1-113394670",
+          "missed_target": "S2-527848464",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "dream trading private limited",
+          "q_addr": "shop no.01, sai darshan compound, ganesh nagar, western express highway, borivali east, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-118456573",
+          "missed_target": "S2-710598303",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "silver infotech private limited",
+          "q_addr": "p-block, f-block, indoor stadium, noida sector 21 a, noida, gautam buddha nagar, uttar pradesh"
+        },
+        {
+          "query": "S1-128453941",
+          "missed_target": "S3-865566740",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "bangalore north exports",
+          "q_addr": "429, 3rd crs, devsandra, chikamaranahalli, rs ngr, bangalore north, bangalore, karnataka"
+        },
+        {
+          "query": "S1-132363675",
+          "missed_target": "S3-12362918",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "(india) mkj travels pvt. ltd.",
+          "q_addr": "opp. hotel country inn near bhaiwala chowk, ferozepur road, ludhiana, punjab"
+        },
+        {
+          "query": "S1-137722364",
+          "missed_target": "S2-291845490",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "prime consultants private limited",
+          "q_addr": "809a 19a 1 thakur village road poisar, kandivali east, 1st-flr building no 2 tw gardens, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-151287235",
+          "missed_target": "S2-657287506",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "baba marketing private limited",
+          "q_addr": "253/1, bhim garh kheri, gurgaon, gurgaon, haryana"
+        },
+        {
+          "query": "S1-167712516",
+          "missed_target": "S2-438645406",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "tirupati marketing private limited",
+          "q_addr": "101, 1st floor, hari niwas gokul bldg, naupada, thane, maharashtra"
+        },
+        {
+          "query": "S1-197895974",
+          "missed_target": "S2-146761759",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "ss management private limited",
+          "q_addr": "shop no. 1, 2, 3, 4, vasant gateway, near narayana e-techno school, vasant valley, kalyan, thane, maharashtra"
+        },
+        {
+          "query": "S1-201248632",
+          "missed_target": "S2-567625914",
+          "route_name": "C1_MaxDF_20k",
+          "q_name": "shiv exports",
+          "q_addr": "s2, prabhu complex, 1/181, velachery main road, santhoshapuram, tambaram, kanchipuram, tamil nadu"
+        }
+      ],
+      "runtime_sec": 225.0
+    },
+    "C2_TopK_100": {
+      "oracle": {
+        "macro": 0.9425787989060066,
+        "tp": 6089,
+        "fp": 0,
+        "fn": 827,
+        "singleton_fp_rate": 0.0,
+        "cand_med": 3,
+        "cand_p95": 6
+      },
+      "source_distribution": {
+        "S2": 156910,
+        "S3": 46403
+      },
+      "retrieval_fn_examples": [
+        {
+          "query": "S1-101146047",
+          "missed_target": "S2-566616134",
+          "route_name": "C2_TopK_100",
+          "q_name": "shivani solutions private limited",
+          "q_addr": "19/203 near old police station kalyanpuri, delhi, new delhi"
+        },
+        {
+          "query": "S1-108420076",
+          "missed_target": "S2-481842952",
+          "route_name": "C2_TopK_100",
+          "q_name": "super trading limited",
+          "q_addr": "92/7, karnal, nissing, karnal, haryana"
+        },
+        {
+          "query": "S1-113394670",
+          "missed_target": "S2-527848464",
+          "route_name": "C2_TopK_100",
+          "q_name": "dream trading private limited",
+          "q_addr": "shop no.01, sai darshan compound, ganesh nagar, western express highway, borivali east, mumbai, maharashtra"
+        },
+        {
+          "query": "S1-118456573",
+          "missed_target": "S2-710598303",
+          "route_name": "C2_TopK_100",
+          "q_name": "silver infotech private limited",
+          "q_addr": "p-block, f-block, indoor stadium, noida sector 21 a, noida, gautam buddha nagar, uttar pradesh"
+        },
+        {
+          "query": "S1-126975633",
+          "missed_target": "S2-344256462",
+          "route_name": "C2_TopK_100",
+          "q_name": "royal ventures private limited",
+          "q_addr": "m-215, greater kailash-ii, greater kailash, south delhi, delhi"
+        },
+        {
+          "query": "S1-128453941",
+          "missed_target": "S3-865566740",
+          "route_name": "C2_TopK_100",
+          "q_name": "bangalore north exports",
+          "q_addr": "429, 3rd crs, devsandra, chikamaranahalli, rs ngr, bangalore north, bangalore, karnataka"
+        },
+        {
+          "query": "S1-151287235",
+          "missed_target": "S2-657287506",
+          "route_name": "C2_TopK_100",
+          "q_name": "baba marketing private limited",
+          "q_addr": "253/1, bhim garh kheri, gurgaon, gurgaon, haryana"
+        },
+        {
+          "query": "S1-167712516",
+          "missed_target": "S2-438645406",
+          "route_name": "C2_TopK_100",
+          "q_name": "tirupati marketing private limited",
+          "q_addr": "101, 1st floor, hari niwas gokul bldg, naupada, thane, maharashtra"
+        },
+        {
+          "query": "S1-172404524",
+          "missed_target": "S3-752418076",
+          "route_name": "C2_TopK_100",
+          "q_name": "ram investments llp",
+          "q_addr": "house no.8, basement floor, blk-a, pitampura, delhi, north west delhi, delhi"
+        },
+        {
+          "query": "S1-184339320",
+          "missed_target": "S2-343704629",
+          "route_name": "C2_TopK_100",
+          "q_name": "verbena pharmaceuticals (india) pvt ltd",
+          "q_addr": "d. no 4-1-92/9 (1) 1st floor, a.p tower, ballalbagh, m.g road, mangalore, dakshina kannada, karnataka"
+        }
+      ],
+      "runtime_sec": 168.7
+    }
+  }
+}

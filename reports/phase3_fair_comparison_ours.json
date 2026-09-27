@@ -1,0 +1,78 @@
+{
+  "comparison_metadata": {
+    "sample_count": 2000,
+    "sample_file_sha256": "ce814b23f8d0532c2dafe12181e8d0aad789cde1aa0fbe7eb2d27bce96e4588c",
+    "matches_seed_2027_sorted_reference_recipe": true,
+    "sample_true_links": 6946,
+    "sample_singletons": 108,
+    "split_id": "8f33fb5819bd9acf5bb963c278707919ecc4f6b205242bf5ef84f2826caf741e",
+    "original_input_sha256": {
+      "train_ground_truth.tsv": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037",
+      "train_source1.tsv": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973",
+      "train_source2.tsv": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed",
+      "train_source3.tsv": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+    },
+    "target_count": 1548174,
+    "unmatched_distractor_count": 402537,
+    "dev_target_ids_tsv_sha256": "243300a3115c863642b0ed88fdddcd20a36e6cf52ff2f658c8bd1b970950a19a"
+  },
+  "retrieval_settings": {
+    "M_TOKENS": 5,
+    "MAX_DF_RATIO": 0.05,
+    "MAX_DF_ABS": 5000
+  },
+  "runner_sha256": "7db2568672aa396b0f89140e6e18b797783d693e08d573e90de476cddc347df2",
+  "index_seconds": 50.63560152053833,
+  "query_seconds": 7.630504131317139,
+  "peak_process_ram_mib": 1210.6953125,
+  "metrics": {
+    "union_k10": {
+      "refs_evaluated": 2000,
+      "singletons": 108,
+      "total_true_links": 6946,
+      "retrieved_true_links": 6425,
+      "total_candidates": 36230,
+      "link_recall": 0.9249928016124388,
+      "oracle_f05": 0.9718069961322822,
+      "cands_median": 19,
+      "cands_p95": 20,
+      "cands_max": 20,
+      "zero_retrieved_rate": 0.01004228329809725,
+      "mean_candidates": 18.115
+    },
+    "union_k50": {
+      "refs_evaluated": 2000,
+      "singletons": 108,
+      "total_true_links": 6946,
+      "retrieved_true_links": 6654,
+      "total_candidates": 189461,
+      "link_recall": 0.9579614166426721,
+      "oracle_f05": 0.9844689351252445,
+      "cands_median": 98,
+      "cands_p95": 100,
+      "cands_max": 100,
+      "zero_retrieved_rate": 0.0047568710359408035,
+      "mean_candidates": 94.7305
+    },
+    "union_k100": {
+      "refs_evaluated": 2000,
+      "singletons": 108,
+      "total_true_links": 6946,
+      "retrieved_true_links": 6695,
+      "total_candidates": 376835,
+      "link_recall": 0.9638640944428448,
+      "oracle_f05": 0.9861029113245668,
+      "cands_median": 198,
+      "cands_p95": 200,
+      "cands_max": 200,
+      "zero_retrieved_rate": 0.0047568710359408035,
+      "mean_candidates": 188.4175
+    }
+  },
+  "notes": [
+    "Retrieval/index code copied unchanged from existing pilot; saved sample replay and export added.",
+    "All candidate files contain every saved reference, including empty lists.",
+    "Targets verified against supplied pool hash before retrieval; labels loaded after artifact creation.",
+    "Oracle values are ceilings, not classifier scores."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "sample_size": 2000,
+  "unique": 2000,
+  "country_counts": {
+    "India": 803,
+    "US": 1197
+  },
+  "overlap_old_tune_secondary": 0,
+  "truth_links_from_split": 6916,
+  "config_candidate_counts": {
+    "Baseline": {
+      "total_candidates": 160386,
+      "mean_candidates": 80.193,
+      "oracle": 0.8903256258536971,
+      "reported_true_links": 6916
+    },
+    "A_ExactBuckets": {
+      "total_candidates": 167384,
+      "mean_candidates": 83.692,
+      "oracle": 0.9200759498509264,
+      "reported_true_links": 6916
+    },
+    "B_JointScoring": {
+      "total_candidates": 105628,
+      "mean_candidates": 52.814,
+      "oracle": 0.9368507245148406,
+      "reported_true_links": 6916
+    },
+    "C1_MaxDF_20k": {
+      "total_candidates": 106576,
+      "mean_candidates": 53.288,
+      "oracle": 0.9760798874715717,
+      "reported_true_links": 6916
+    },
+    "C2_TopK_100": {
+      "total_candidates": 203313,
+      "mean_candidates": 101.6565,
+      "oracle": 0.9425787989060066,
+      "reported_true_links": 6916
+    }
+  },
+  "source_sha256": "31f22f07a1655a408517c9d401c2324017827fde22fdbe15db8cd982bcbfaab1",
+  "review": "Oracle-only report. Combined DF20k/K100 untested. Joint replaces independent token routes. Report candidate quantiles count retrieved truth links, not raw candidates. Country-sized token sets retained during index build. No model evaluation or production throughput proof."
+}

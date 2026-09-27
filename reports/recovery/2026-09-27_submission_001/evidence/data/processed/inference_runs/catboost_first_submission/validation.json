@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "references": 1732544,
+  "method": "official checks per batch plus complete streaming assembly validation",
+  "output_sha256": {
+    "matching_results.tsv": "aaf4659d58b131c2f0746e65a4329d750bdb292d510323cb1ebd13eecab5b9c1",
+    "candidate_pairs.tsv": "9fca2c3685648dc3a46480d1ce7530b69842cac0021088a58ba26d493fd7694e"
+  }
+}

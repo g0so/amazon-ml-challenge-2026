@@ -1,0 +1,13 @@
+{
+  "elapsed_seconds": 392.89,
+  "peak_process_ram_mib": 973.11,
+  "memory_measurement": "Linux peak resident memory for the complete split+baseline process",
+  "manifest_id": "8f33fb5819bd9acf5bb963c278707919ecc4f6b205242bf5ef84f2826caf741e",
+  "code_sha256": {
+    "src/business_entity_resolution/split.py": "d904dc7cf004d8245ad466f95e0753ec28c3a979aba415da81e8ce563f1d6f84",
+    "src/business_entity_resolution/normalize.py": "07a53a9cdbc867af37488b41295f8582a259c2d54e48fedaede76f56066fd01c",
+    "src/business_entity_resolution/baseline.py": "ff1deb9b25524e9494994e764979bceef41b74c009a27bab14b9ddc03a65eead",
+    "src/business_entity_resolution/metrics.py": "3f0d2fd78500c894967b3af48418b8d4fca8b0a54192f4d825ba9188a75ae997",
+    "scripts/run_phase2.py": "71a8e0c407cbd3b03fe804853d237ac01ebff6eeee77ce8e8dba46dc8edd88a4"
+  }
+}

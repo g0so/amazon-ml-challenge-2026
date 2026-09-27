@@ -1,0 +1,16 @@
+{
+  "team": "Spartans",
+  "selected_public_score": 0.789,
+  "score_source": "User-reported evaluated portal result",
+  "policy": "India/US: equal A/B probability blend >= 0.6; France: B >= 0.665",
+  "matching_results": "/home/a/Projects/Amazon ML hackathon/reports/final_blend_submission/matching_results.tsv",
+  "matching_sha256": "e25297c18e885b83107156656e88769d4eb021bcdd328f35de84652038aa8fca",
+  "package": "/home/a/Projects/Amazon ML hackathon/output/final/blend_experimental/Spartans_submission.zip",
+  "package_sha256": "421ffd8bf9033cdaa871ba42c8c5bd905b18055cde298f3c23103127f4bab209",
+  "previous_scores": [
+    0.764,
+    0.787,
+    0.785
+  ],
+  "note": "Existing ZIP preserved byte-for-byte. Its documentation accurately records that the portal score was unknown at packaging. This handoff records the subsequently reported 0.789 score."
+}

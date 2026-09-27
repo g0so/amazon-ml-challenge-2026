@@ -1,0 +1,61 @@
+{
+  "input_hashes": {
+    "test_source1.tsv": "3d4a32c54c2ca9c53fd7c2be105bf26f708f94c4d2f88eb370972a195665c2f5",
+    "test_source2.tsv": "79d906c7497af2ace70aa277f6e334a652094909de99bd6c57b53420b6a7b2dd",
+    "test_source3.tsv": "850942b11d2a4343486ed0834e28bce9f3b385f3fd497fd60ccf4ea3b8bda035"
+  },
+  "counts": {
+    "1": 1732544,
+    "2": 4887273,
+    "3": 5082316
+  },
+  "countries": [
+    {
+      "country": "France",
+      "source": 1,
+      "rows": 259452
+    },
+    {
+      "country": "France",
+      "source": 2,
+      "rows": 703378
+    },
+    {
+      "country": "France",
+      "source": 3,
+      "rows": 731615
+    },
+    {
+      "country": "India",
+      "source": 1,
+      "rows": 809986
+    },
+    {
+      "country": "India",
+      "source": 2,
+      "rows": 2312565
+    },
+    {
+      "country": "India",
+      "source": 3,
+      "rows": 2405000
+    },
+    {
+      "country": "US",
+      "source": 1,
+      "rows": 663106
+    },
+    {
+      "country": "US",
+      "source": 2,
+      "rows": 1871330
+    },
+    {
+      "country": "US",
+      "source": 3,
+      "rows": 1945701
+    }
+  ],
+  "normalization": "nfc-casefold-whitespace-v1",
+  "build_seconds": 206.80976476600335
+}

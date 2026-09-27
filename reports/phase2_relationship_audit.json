@@ -1,0 +1,74 @@
+{
+  "created_at_utc": "2026-09-26T13:53:35.465267+00:00",
+  "scope": "Full training ground truth and all three training source ID columns",
+  "reference_rows": 2206821,
+  "positive_link_rows": 7638365,
+  "singleton_rows": 123247,
+  "source_rows": {
+    "S1": 2206821,
+    "S2": 5034616,
+    "S3": 5285603
+  },
+  "truth_rows_with_duplicate_targets": 0,
+  "duplicate_target_list_examples": [],
+  "distinct_labeled_targets": 7638365,
+  "unmatched_target_record_rows": 2681854,
+  "checks": {
+    "duplicate_reference_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_source_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "targets_with_multiple_references": {
+      "count": 0,
+      "examples": []
+    },
+    "truth_references_missing_from_source1": {
+      "count": 0,
+      "examples": []
+    },
+    "source1_records_missing_truth": {
+      "count": 0,
+      "examples": []
+    },
+    "truth_targets_missing_from_sources": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "shared_target_examples": [],
+  "structural_integrity_passed": true,
+  "blocking_integrity_issues": [],
+  "grouping_requires_shared_target_components": false,
+  "inputs": [
+    {
+      "name": "train_ground_truth.tsv",
+      "bytes": 127015583,
+      "sha256": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037"
+    },
+    {
+      "name": "train_source1.tsv",
+      "bytes": 210069713,
+      "sha256": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973"
+    },
+    {
+      "name": "train_source2.tsv",
+      "bytes": 489301488,
+      "sha256": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed"
+    },
+    {
+      "name": "train_source3.tsv",
+      "bytes": 503705637,
+      "sha256": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+    }
+  ],
+  "elapsed_seconds": 211.28,
+  "limitations": [
+    "Does not establish semantic identity correctness or completeness of labels.",
+    "Distinct IDs can still have identical or related business text; content leakage is not checked.",
+    "No split manifest, normalization, matcher, or model was created."
+  ]
+}

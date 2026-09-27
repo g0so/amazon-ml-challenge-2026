@@ -1,0 +1,509 @@
+{
+  "created_at": "2026-09-27T16:44:06+0530",
+  "note": "Read-only cached audit. Train scores are in-sample. Tune has been used for model selection.",
+  "train": {
+    "references": 5000,
+    "pairs": 406065,
+    "macro_f05": 0.8393097637441009,
+    "oracle_macro_f05": 0.9133524533769011,
+    "tp": 13494,
+    "fp": 1080,
+    "fn": 3673,
+    "retrieval_fn": 2691,
+    "classification_fn": 982,
+    "singleton_false_positive_rate": 0.22697368421052633,
+    "by_country": {
+      "India": {
+        "references": 1947,
+        "macro_f05": 0.8151901231260714,
+        "oracle_macro_f05": 0.9072145482999101
+      },
+      "US": {
+        "references": 3053,
+        "macro_f05": 0.8546916636076132,
+        "oracle_macro_f05": 0.9172668003093941
+      }
+    },
+    "feature_parity_max_abs_12_sampled_rows": 0.0,
+    "missed_link_examples": [
+      {
+        "reference": {
+          "entity_id": "S1-825480373",
+          "country": "US",
+          "name_raw": "Delta Automotive",
+          "address_raw": "66 Ellsworth Heights Street, Silver Spring, MD"
+        },
+        "missed_target": {
+          "entity_id": "S2-304078841",
+          "source": 2,
+          "country": "US",
+          "name_raw": "DELTA CENTER",
+          "address_raw": "Ellsworth Heights Street, SILVER SPRING, MD",
+          "name_norm": "delta center",
+          "address_norm": "ellsworth heights street, silver spring, md"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-478564012",
+          "country": "India",
+          "name_raw": "Maxwell Producer Corporation",
+          "address_raw": "S-283 3Rd Floor Greater Kailash-Ii New Delhi, New Delhi, South Delhi, Delhi"
+        },
+        "missed_target": {
+          "entity_id": "S3-651933536",
+          "source": 3,
+          "country": "India",
+          "name_raw": "*** Maxwell Pormcder Corporation",
+          "address_raw": "S-283 3Rd Floor Geater Kailash-ii New Delhi, New Delhi, South Delhi, DL",
+          "name_norm": "*** maxwell pormcder corporation",
+          "address_norm": "s-283 3rd floor geater kailash-ii new delhi, new delhi, south delhi, dl"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-367881338",
+          "country": "India",
+          "name_raw": "Gujarat Brothers LLP",
+          "address_raw": "Ag-08, Goyal Tower Nr Jahanvi Restaurant, Gulbai Tekra, Ahmedabad, Gujarat"
+        },
+        "missed_target": {
+          "entity_id": "S3-873310582",
+          "source": 3,
+          "country": "India",
+          "name_raw": "Sri Gujarat  Brothers",
+          "address_raw": "Ag-g-08, Ahmedabad, GJ",
+          "name_norm": "sri gujarat brothers",
+          "address_norm": "ag-g-08, ahmedabad, gj"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-422883319",
+          "country": "India",
+          "name_raw": "Global Producer Private Limited",
+          "address_raw": "M.S Arcade, Kalungu Junction, Vithura, Nedumangad, Thiruvananthapuram, Trivandrum, Kerala"
+        },
+        "missed_target": {
+          "entity_id": "S3-788625288",
+          "source": 3,
+          "country": "India",
+          "name_raw": "ഗ്ലോബൽ പ്രൊഡ്യൂസർ പ്രൈവറ്റ് ലിമിറ്റഡ്",
+          "address_raw": "M.s Arcade, Thiruvananthapuram, Trivandrum, Keralam",
+          "name_norm": "ഗ്ലോബൽ പ്രൊഡ്യൂസർ പ്രൈവറ്റ് ലിമിറ്റഡ്",
+          "address_norm": "m.s arcade, thiruvananthapuram, trivandrum, keralam"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-670155391",
+          "country": "India",
+          "name_raw": "Centre (India) Global",
+          "address_raw": "1279 Action Area Iib, 3Rd, Floor Newtown Rajarhat, North 24 Parganas, West Bengal"
+        },
+        "missed_target": {
+          "entity_id": "S2-973745866",
+          "source": 2,
+          "country": "India",
+          "name_raw": "centre (india) global",
+          "address_raw": "",
+          "name_norm": "centre (india) global",
+          "address_norm": ""
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-963965392",
+          "country": "India",
+          "name_raw": "Ace Solutions Private Limited",
+          "address_raw": "Rgc Road, Milan Pally Barasat, Kolkata, Parganas North, West Bengal"
+        },
+        "missed_target": {
+          "entity_id": "S2-836620955",
+          "source": 2,
+          "country": "India",
+          "name_raw": "এইস সলিউশনস প্রাইভেট লিমিটেড",
+          "address_raw": "RGC ROAD, KOLKATA, PARGANAS NORTH, West Bengal",
+          "name_norm": "এইস সলিউশনস প্রাইভেট লিমিটেড",
+          "address_norm": "rgc road, kolkata, parganas north, west bengal"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-268572719",
+          "country": "US",
+          "name_raw": "Ayala, Friederike, O.D.",
+          "address_raw": "217 Lincoln Drive, Great Falls, MT"
+        },
+        "missed_target": {
+          "entity_id": "S3-188339823",
+          "source": 3,
+          "country": "US",
+          "name_raw": "Ayala, O.D. Fríederike,",
+          "address_raw": "217 Lincoln Dr, Great Falls, Montana",
+          "name_norm": "ayala, o.d. fríederike,",
+          "address_norm": "217 lincoln dr, great falls, montana"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-272419967",
+          "country": "US",
+          "name_raw": "Birch Corp",
+          "address_raw": "3313 Caribbean Drive, Mesquite, TX"
+        },
+        "missed_target": {
+          "entity_id": "S3-854057280",
+          "source": 3,
+          "country": "US",
+          "name_raw": "Birch Corp",
+          "address_raw": "",
+          "name_norm": "birch corp",
+          "address_norm": ""
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-161655349",
+          "country": "India",
+          "name_raw": "Dolphin Express Private Limited",
+          "address_raw": "Property No. 1838, Plot No. B3-8, A-4, Focal Point, Ludhiana, Punjab"
+        },
+        "missed_target": {
+          "entity_id": "S2-583501604",
+          "source": 2,
+          "country": "India",
+          "name_raw": "Smt DOLPHIN-ELRESH PRIVATE LIMITED",
+          "address_raw": "",
+          "name_norm": "smt dolphin-elresh private limited",
+          "address_norm": ""
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-150443643",
+          "country": "India",
+          "name_raw": "White Healthcare",
+          "address_raw": "Plot No- 25/1 Jagamara, Gandamunda, Bhubaneswar, Khordha, Orissa"
+        },
+        "missed_target": {
+          "entity_id": "S2-713256484",
+          "source": 2,
+          "country": "India",
+          "name_raw": "ହ୍ୱାଇଟ୍ ହେଲ୍ଥକେୟାର୍",
+          "address_raw": "PLOT NO- 25/1 JAGAMARA, BHUBANESWAR, KHORDHA, Orissa",
+          "name_norm": "ହ୍ୱାଇଟ୍ ହେଲ୍ଥକେୟାର୍",
+          "address_norm": "plot no- 25/1 jagamara, bhubaneswar, khordha, orissa"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-878546454",
+          "country": "US",
+          "name_raw": "Integrated Education Studios LLC",
+          "address_raw": "Sioux City, IA, 1695 170th Street"
+        },
+        "missed_target": {
+          "entity_id": "S2-551151298",
+          "source": 2,
+          "country": "US",
+          "name_raw": "Integrated Education",
+          "address_raw": "1695 170ND STREET, SIOUX CITY, IA",
+          "name_norm": "integrated education",
+          "address_norm": "1695 170nd street, sioux city, ia"
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-941840795",
+          "country": "US",
+          "name_raw": "Gomez Chemical Inc",
+          "address_raw": "43 Moreland Avenue, Unit Apartment 1, Albany, NY"
+        },
+        "missed_target": {
+          "entity_id": "S2-775170553",
+          "source": 2,
+          "country": "US",
+          "name_raw": "GOMEZ CHEMICAL INC",
+          "address_raw": "0043 Moreland Ave, ALBANY CITY, NY",
+          "name_norm": "gomez chemical inc",
+          "address_norm": "0043 moreland ave, albany city, ny"
+        }
+      }
+    ]
+  },
+  "tune": {
+    "references": 2000,
+    "pairs": 190199,
+    "macro_f05": 0.9162885058364271,
+    "oracle_macro_f05": 0.9840550739795285,
+    "tp": 5947,
+    "fp": 280,
+    "fn": 836,
+    "retrieval_fn": 244,
+    "classification_fn": 592,
+    "singleton_false_positive_rate": 0.09917355371900827,
+    "by_country": {
+      "India": {
+        "references": 778,
+        "macro_f05": 0.8749774887396582,
+        "oracle_macro_f05": 0.9692445783972493
+      },
+      "US": {
+        "references": 1222,
+        "macro_f05": 0.9425896280142388,
+        "oracle_macro_f05": 0.9934843420343673
+      }
+    },
+    "feature_parity_max_abs_12_sampled_rows": 0.0,
+    "missed_link_examples": [
+      {
+        "reference": {
+          "entity_id": "S1-694649886",
+          "country": "US",
+          "name_raw": "Meridian Clinic",
+          "address_raw": "Goodyear, AZ, Unit D, 16260 Van Buren Street"
+        },
+        "missed_target": {
+          "entity_id": "S3-305244837",
+          "source": 3,
+          "country": "US",
+          "name_raw": "Meridian Clinic Corporation",
+          "address_raw": "Unit D, 1626 Van Buren St, Arizona, Godyear",
+          "country_norm": "us",
+          "name_norm": "meridian clinic corporation",
+          "address_norm": "unit d, 1626 van buren st, arizona, godyear",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-340333927",
+          "country": "India",
+          "name_raw": "Chintpurni Innovations Limited",
+          "address_raw": "Office No 103, 1St Floor, Yashwant Apartment, Rgg Path, Thane, Maharashtra"
+        },
+        "missed_target": {
+          "entity_id": "S3-239620238",
+          "source": 3,
+          "country": "India",
+          "name_raw": "chintpurniinn0vations.com",
+          "address_raw": "Plot 680- Office No 103, Thane, MH",
+          "country_norm": "india",
+          "name_norm": "chintpurniinn0vations.com",
+          "address_norm": "plot 680- office no 103, thane, mh",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-245812765",
+          "country": "India",
+          "name_raw": "Supreme Constructions Private Limited",
+          "address_raw": "Rajinder Nagar, New Delhi, R-815(B-11), Central Delhi, New Delhi, Delhi"
+        },
+        "missed_target": {
+          "entity_id": "S3-595398800",
+          "source": 3,
+          "country": "India",
+          "name_raw": "Supreme कंस्ट्रक्शंस प्राइवेट लिमिटेड",
+          "address_raw": "Central Delhi, New Delhi, R-g-815(b-11), DL",
+          "country_norm": "india",
+          "name_norm": "supreme कंस्ट्रक्शंस प्राइवेट लिमिटेड",
+          "address_norm": "central delhi, new delhi, r-g-815(b-11), dl",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-271023019",
+          "country": "India",
+          "name_raw": "Tech Technologies LLP",
+          "address_raw": "201, Sunsilver Appt, Nr Axardham Akota, Vadodara, Gujarat"
+        },
+        "missed_target": {
+          "entity_id": "S3-301149158",
+          "source": 3,
+          "country": "India",
+          "name_raw": "Tech Tecfhdnologies LLP",
+          "address_raw": "201, GJ",
+          "country_norm": "india",
+          "name_norm": "tech tecfhdnologies llp",
+          "address_norm": "201, gj",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-468738205",
+          "country": "India",
+          "name_raw": "DIM Financial",
+          "address_raw": "Sf-221, 2-Floor, It Complex Jmd Megapolis, Village Tikri, Sohna Road, Gurgaon, Haryana"
+        },
+        "missed_target": {
+          "entity_id": "S3-492275922",
+          "source": 3,
+          "country": "India",
+          "name_raw": "dimfinancial.com",
+          "address_raw": "Sf-221, Gurgaon, हरियाणा",
+          "country_norm": "india",
+          "name_norm": "dimfinancial.com",
+          "address_norm": "sf-221, gurgaon, हरियाणा",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-679473154",
+          "country": "India",
+          "name_raw": "Rising & Sons Private Limited",
+          "address_raw": "Plot No. 111, Sy No. 1009, 5Th Phase Road, Kphb Colony, Tirumalagiri, Hyderabad, Telangana"
+        },
+        "missed_target": {
+          "entity_id": "S3-878268264",
+          "source": 3,
+          "country": "India",
+          "name_raw": "Rising & Sons Private Ltd",
+          "address_raw": "Plot No. 111, Hyderabad, TG",
+          "country_norm": "india",
+          "name_norm": "rising & sons private ltd",
+          "address_norm": "plot no. 111, hyderabad, tg",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-820405850",
+          "country": "India",
+          "name_raw": "Maa Services Private Limited",
+          "address_raw": "212, Marine Chambers, New Marine Lines, Churchgate, Bombay-20., Mumbai, Maharashtra"
+        },
+        "missed_target": {
+          "entity_id": "S2-311983850",
+          "source": 2,
+          "country": "India",
+          "name_raw": "माँ सर्विसेज प्राइवेट लिमिटेड",
+          "address_raw": "212, BOMBAY-20., MUMBAI, महाराष्ट्र",
+          "country_norm": "india",
+          "name_norm": "माँ सर्विसेज प्राइवेट लिमिटेड",
+          "address_norm": "212, bombay-20., mumbai, महाराष्ट्र",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-122714307",
+          "country": "India",
+          "name_raw": "First Enterprises LLP",
+          "address_raw": "D-50, Dr. Ambedkar Street, Jothi Nagar, Pollachi, Coimbatore, Tamil Nadu"
+        },
+        "missed_target": {
+          "entity_id": "S2-194582463",
+          "source": 2,
+          "country": "India",
+          "name_raw": "ஃபர்ஸ்ட் எண்டர்பிரைசஸ் எல்எல்பி",
+          "address_raw": "தமிழ்நாடு, D-50, WESTERN REGION COIMBATORE",
+          "country_norm": "india",
+          "name_norm": "ஃபர்ஸ்ட் எண்டர்பிரைசஸ் எல்எல்பி",
+          "address_norm": "தமிழ்நாடு, d-50, western region coimbatore",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-744324909",
+          "country": "US",
+          "name_raw": "Womens Health Care Associates LLC",
+          "address_raw": "Bruceton Mills, WV, 443 Beaver Creek Drive"
+        },
+        "missed_target": {
+          "entity_id": "S3-458081602",
+          "source": 3,
+          "country": "US",
+          "name_raw": "Womens Health Cáre Associates LLC",
+          "address_raw": "",
+          "country_norm": "us",
+          "name_norm": "womens health cáre associates llc",
+          "address_norm": "",
+          "eligible": 0
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-839633042",
+          "country": "US",
+          "name_raw": "Crystal Strategies LLC",
+          "address_raw": "173 Gibson Wells Brazil Road, Trenton, TN"
+        },
+        "missed_target": {
+          "entity_id": "S2-519416815",
+          "source": 2,
+          "country": "US",
+          "name_raw": "Crystal  Stfraegies LLC",
+          "address_raw": "",
+          "country_norm": "us",
+          "name_norm": "crystal stfraegies llc",
+          "address_norm": "",
+          "eligible": 0
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-765750811",
+          "country": "US",
+          "name_raw": "Blue Massage! LLC",
+          "address_raw": "1706 Hill Street, Killeen, TX"
+        },
+        "missed_target": {
+          "entity_id": "S3-641773865",
+          "source": 3,
+          "country": "US",
+          "name_raw": "Blue Msahsasgoe! LLC",
+          "address_raw": "01706 Hill Street, Killeen, Texas",
+          "country_norm": "us",
+          "name_norm": "blue msahsasgoe! llc",
+          "address_norm": "01706 hill street, killeen, texas",
+          "eligible": 1
+        }
+      },
+      {
+        "reference": {
+          "entity_id": "S1-787724607",
+          "country": "India",
+          "name_raw": "Point Trading Pvt. Ltd.",
+          "address_raw": "No: 153, Vellala Street, Purasaiwakkam, Chennai, Tamil Nadu"
+        },
+        "missed_target": {
+          "entity_id": "S3-807517125",
+          "source": 3,
+          "country": "India",
+          "name_raw": "Point Trading Ltd. Pvt.",
+          "address_raw": "தமிழ்நாடு, Madras, Chennai, No: 153",
+          "country_norm": "india",
+          "name_norm": "point trading ltd. pvt.",
+          "address_norm": "தமிழ்நாடு, madras, chennai, no: 153",
+          "eligible": 1
+        }
+      }
+    ]
+  },
+  "local_submission_sha256": "aaf4659d58b131c2f0746e65a4329d750bdb292d510323cb1ebd13eecab5b9c1",
+  "matches_saved_submission_hash": true,
+  "independent_metric_cases_passed": 6,
+  "train_retrieval_missed_link_audit": {
+    "missed_links": 2691,
+    "exact_name": 343,
+    "exact_address": 65,
+    "exact_both": 0,
+    "either_address_missing": 375,
+    "exact_name_and_address_missing": 53
+  },
+  "full_test_cached_batch_totals": {
+    "seconds": 8491.330895677107,
+    "retrieval": 1732.4415765919257,
+    "fetch": 1039.2127315720063,
+    "features": 5700.634046966072,
+    "pairs": 138530079
+  },
+  "full_test_cached_batch_totals_note": "Sum across all batch.json timing records; excludes some index, write, validation and interruption overhead. status elapsed_this_process is not the complete runtime."
+}

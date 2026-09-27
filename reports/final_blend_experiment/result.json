@@ -1,0 +1,49 @@
+{
+  "selected": {
+    "weight_b": 1.0,
+    "threshold": 0.665,
+    "macro_f05": 0.8248836115158982,
+    "countries": {
+      "India": 0.7761461809137278,
+      "US": 0.8583803157880311
+    },
+    "tp": 7268,
+    "fp": 221,
+    "fn": 3121,
+    "singleton_errors": 19,
+    "singletons": 156
+  },
+  "confirmation_baseline": {
+    "macro_f05": 0.8218463551273638,
+    "countries": {
+      "India": 0.7685307657212302,
+      "US": 0.8548019459900545
+    },
+    "tp": 7141,
+    "fp": 208,
+    "fn": 3077,
+    "singleton_errors": 13,
+    "singletons": 186
+  },
+  "confirmation_candidate": {
+    "macro_f05": 0.8218463551273638,
+    "countries": {
+      "India": 0.7685307657212302,
+      "US": 0.8548019459900545
+    },
+    "tp": 7141,
+    "fp": 208,
+    "fn": 3077,
+    "singleton_errors": 13,
+    "singletons": 186
+  },
+  "difference": 0.0,
+  "paired_bootstrap_95_percent": [
+    0.0,
+    0.0
+  ],
+  "supported_on_fresh_confirmation": false,
+  "elapsed_seconds": 245.4013083720056,
+  "France": "Keep exact current B/.665 predictions; no France accuracy claim.",
+  "note": "One tune-selected challenger. No further tuning on confirmation."
+}

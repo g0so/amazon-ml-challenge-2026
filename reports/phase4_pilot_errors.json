@@ -1,0 +1,72 @@
+[
+  {
+    "type": "FN",
+    "ref": "S1-753506445",
+    "target": "S3-538850085",
+    "prob": 0.013985372923977325,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-753506445",
+    "target": "S3-667408492",
+    "prob": 0.07605617748974618,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-590786991",
+    "target": "S3-24427315",
+    "prob": 0.09379879320001562,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-842890352",
+    "target": "S3-334338925",
+    "prob": 0.02378591355033202,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-842890352",
+    "target": "S2-770590387",
+    "prob": 0.3318009336414558,
+    "retrieved": true
+  },
+  {
+    "type": "FP",
+    "ref": "S1-883216944",
+    "target": "S3-178904437",
+    "prob": 0.5122487143772607,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-883216944",
+    "target": "S3-224040032",
+    "prob": 0.13141852065412146,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-883216944",
+    "target": "S3-236910824",
+    "prob": 0.07605617748974618,
+    "retrieved": true
+  },
+  {
+    "type": "FN",
+    "ref": "S1-883216944",
+    "target": "S2-845324093",
+    "prob": null,
+    "retrieved": false
+  },
+  {
+    "type": "FN",
+    "ref": "S1-550551866",
+    "target": "S3-797648629",
+    "prob": null,
+    "retrieved": false
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "selected": {
+    "weight_b": 0.5,
+    "threshold": 0.6,
+    "macro_f05": 0.8275710429295768,
+    "countries": {
+      "India": 0.7861509905975296,
+      "US": 0.8560385929575641
+    },
+    "tp": 7427,
+    "fp": 290,
+    "fn": 2962,
+    "singleton_errors": 26,
+    "singletons": 156
+  },
+  "reason": "Secondary aggregate-only selection after strict country constraint retained baseline; selected using tuning data only."
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "partitions": {
+    "train": {
+      "references": 5000,
+      "pairs": 406065,
+      "v3_macro_f05": 0.7719611161005657,
+      "tp": 13135,
+      "fp": 2872,
+      "fn": 4032
+    },
+    "tune": {
+      "references": 2000,
+      "pairs": 190199,
+      "v3_macro_f05": 0.8839352147713383,
+      "tp": 5809,
+      "fp": 538,
+      "fn": 974
+    }
+  }
+}

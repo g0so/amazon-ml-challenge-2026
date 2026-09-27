@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "code_hash": "baeb2c8ddfedb32a8ead23def2571bed87e8dfae1649149ae9d331845de10afe",
+    "query_count": 2000,
+    "target_counts": {
+      "India": 3512924,
+      "US": 5259040
+    }
+  },
+  "configs": {
+    "Combined_DF20k_K100": {
+      "cands": {
+        "total": 206048,
+        "mean": 103.024,
+        "median": 100,
+        "p95": 122,
+        "max": 150
+      },
+      "link_recall": 0.9424522845575477,
+      "zero_retrieved_positive_queries": 12,
+      "oracle_macro": 0.9786362761643086,
+      "model": {
+        "macro": 0.8406771293707134,
+        "tp": 5986,
+        "fp": 1117,
+        "fn": 930,
+        "singleton_fp_rate": 0.4036697247706422
+      },
+      "timings": {
+        "total_sec": 272.9
+      },
+      "memory": {
+        "peak_mb": 3505.31640625
+      },
+      "config_dump": {
+        "max_df_abs": 20000,
+        "max_df_ratio": 0.05,
+        "top_k_tokens": 5,
+        "top_k_cands": 100,
+        "route_exact_name": true,
+        "route_exact_address": true,
+        "route_joint": true,
+        "exact_cap": 50,
+        "union_baseline": false
+      }
+    },
+    "Union_PreserveBase": {
+      "cands": {
+        "total": 283404,
+        "mean": 141.702,
+        "median": 145,
+        "p95": 194,
+        "max": 233
+      },
+      "link_recall": 0.9454887218045113,
+      "zero_retrieved_positive_queries": 12,
+      "oracle_macro": 0.979693107813052,
+      "model": {
+        "macro": 0.8403070665641393,
+        "tp": 5998,
+        "fp": 1135,
+        "fn": 918,
+        "singleton_fp_rate": 0.4036697247706422
+      },
+      "timings": {
+        "total_sec": 234.5
+      },
+      "memory": {
+        "peak_mb": 3902.25390625
+      },
+      "config_dump": {
+        "max_df_abs": 20000,
+        "max_df_ratio": 0.05,
+        "top_k_tokens": 5,
+        "top_k_cands": 100,
+        "route_exact_name": true,
+        "route_exact_address": true,
+        "route_joint": true,
+        "exact_cap": 50,
+        "union_baseline": true
+      }
+    }
+  }
+}

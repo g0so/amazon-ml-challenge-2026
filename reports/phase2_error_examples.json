@@ -1,0 +1,192 @@
+{
+  "raw_exact": {
+    "false_positive": [],
+    "false_negative": [
+      {
+        "reference_id": "S1-100005592",
+        "country": "US",
+        "reference_name": "Memorial Ministries",
+        "reference_address": "105 Canal Street, Lagrange, IN",
+        "target_id": "S3-298224934",
+        "target_name": "Mem0rial Ministries Co",
+        "target_address": "105 Canal Street, Lagrange, Indiana"
+      },
+      {
+        "reference_id": "S1-100005592",
+        "country": "US",
+        "reference_name": "Memorial Ministries",
+        "reference_address": "105 Canal Street, Lagrange, IN",
+        "target_id": "S3-640765651",
+        "target_name": "Memorial Memorial Ministries",
+        "target_address": "Lagrange, Indiana, 105 Canal Street"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S2-247097312",
+        "target_name": "Concordia's Apparel Complete",
+        "target_address": "2712- CAMILLE STREET, PASADENA, TX"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S2-606992934",
+        "target_name": "*** Concordia's Complete Apparel Ltd",
+        "target_address": "2712- CAMILLE ST, PASADENA, TX"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S3-960005804",
+        "target_name": "Concordia'S Complete-Apparel Complete-Apparel",
+        "target_address": "2712 Camille Street, Pasadena, Texas"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S2-465813041",
+        "target_name": "INTERSTATE SCHOOL OF MEDICINE",
+        "target_address": "9925 GREAT OAKS WAY, FAIRFAX CITY, VA"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-535035678",
+        "target_name": "Interstate School",
+        "target_address": "9925 Great Oaks Way, Fairfax City, Virginia"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-576158732",
+        "target_name": "interstateschoolmedicine.com",
+        "target_address": "9925 Great Oaks Way, Fairfax City, Virginia"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-91756946",
+        "target_name": "Interstateschoolmedicine.Com",
+        "target_address": "9925 Great Oaks Way, Virginia, Fairfax City"
+      },
+      {
+        "reference_id": "S1-100017441",
+        "country": "India",
+        "reference_name": "Great Agro Private Limited",
+        "reference_address": "15/49 S/F, Subhash Nagar, New Delhi, Delhi",
+        "target_id": "S2-974991352",
+        "target_name": "ग्रेट एग्रो प्राइवेट लिमिटेड",
+        "target_address": "75/49 S/F, SUBHASH NAGAR, NEW DELHI, Delhi"
+      }
+    ]
+  },
+  "normalized_exact": {
+    "false_positive": [],
+    "false_negative": [
+      {
+        "reference_id": "S1-100005592",
+        "country": "US",
+        "reference_name": "Memorial Ministries",
+        "reference_address": "105 Canal Street, Lagrange, IN",
+        "target_id": "S3-298224934",
+        "target_name": "Mem0rial Ministries Co",
+        "target_address": "105 Canal Street, Lagrange, Indiana"
+      },
+      {
+        "reference_id": "S1-100005592",
+        "country": "US",
+        "reference_name": "Memorial Ministries",
+        "reference_address": "105 Canal Street, Lagrange, IN",
+        "target_id": "S3-640765651",
+        "target_name": "Memorial Memorial Ministries",
+        "target_address": "Lagrange, Indiana, 105 Canal Street"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S2-247097312",
+        "target_name": "Concordia's Apparel Complete",
+        "target_address": "2712- CAMILLE STREET, PASADENA, TX"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S2-606992934",
+        "target_name": "*** Concordia's Complete Apparel Ltd",
+        "target_address": "2712- CAMILLE ST, PASADENA, TX"
+      },
+      {
+        "reference_id": "S1-100010277",
+        "country": "US",
+        "reference_name": "Concordia's Complete Apparel",
+        "reference_address": "2712 Camille Street, Pasadena, TX",
+        "target_id": "S3-960005804",
+        "target_name": "Concordia'S Complete-Apparel Complete-Apparel",
+        "target_address": "2712 Camille Street, Pasadena, Texas"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-535035678",
+        "target_name": "Interstate School",
+        "target_address": "9925 Great Oaks Way, Fairfax City, Virginia"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-576158732",
+        "target_name": "interstateschoolmedicine.com",
+        "target_address": "9925 Great Oaks Way, Fairfax City, Virginia"
+      },
+      {
+        "reference_id": "S1-100012185",
+        "country": "US",
+        "reference_name": "Interstate School of Medicine",
+        "reference_address": "9925 Great Oaks Way, Fairfax City, VA",
+        "target_id": "S3-91756946",
+        "target_name": "Interstateschoolmedicine.Com",
+        "target_address": "9925 Great Oaks Way, Virginia, Fairfax City"
+      },
+      {
+        "reference_id": "S1-100017441",
+        "country": "India",
+        "reference_name": "Great Agro Private Limited",
+        "reference_address": "15/49 S/F, Subhash Nagar, New Delhi, Delhi",
+        "target_id": "S2-974991352",
+        "target_name": "ग्रेट एग्रो प्राइवेट लिमिटेड",
+        "target_address": "75/49 S/F, SUBHASH NAGAR, NEW DELHI, Delhi"
+      },
+      {
+        "reference_id": "S1-100017441",
+        "country": "India",
+        "reference_name": "Great Agro Private Limited",
+        "reference_address": "15/49 S/F, Subhash Nagar, New Delhi, Delhi",
+        "target_id": "S3-791599964",
+        "target_name": "GA",
+        "target_address": "15/49 S/F, Subhash Nagar, New Delhi, Delhi"
+      }
+    ]
+  }
+}

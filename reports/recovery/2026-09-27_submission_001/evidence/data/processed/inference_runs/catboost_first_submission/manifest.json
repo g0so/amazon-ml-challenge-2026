@@ -1,0 +1,33 @@
+{
+  "run_id": "8c161f7ceedbe7b16de3f249785139e81beafe5957f94dee0fff2ccf723a607d",
+  "identity": {
+    "baseline": "63bcf60c8496037137c4725214afb4f90f3153de0a2aac1a5f0247538da3045d",
+    "model_sha256": "1ea59adbbe61b158501508c032f6b4173f2b1da67ccfe84c01070a3e01170f3d",
+    "threshold": 0.362,
+    "runner_sha256": "9a161870f137051c19eeb451b99e8ee94701d3e3f1c6a79f85768e79de676f6c",
+    "features": [
+      "name_jaccard",
+      "address_jaccard",
+      "name_exact",
+      "address_exact",
+      "name_missing",
+      "address_missing",
+      "name_char",
+      "address_char",
+      "name_containment",
+      "address_containment",
+      "number_overlap",
+      "number_disjoint",
+      "address_numbers_both",
+      "address_numbers_one",
+      "address_numbers_none",
+      "address_numbers_equal",
+      "address_numbers_partial",
+      "address_numbers_unshared_ref",
+      "address_numbers_unshared_target",
+      "name_jaccard_x_address_missing",
+      "name_char_x_address_missing",
+      "name_containment_x_address_missing"
+    ]
+  }
+}

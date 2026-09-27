@@ -1,0 +1,64 @@
+{
+  "challenger": {
+    "threshold": 0.362,
+    "macro_f05": 0.9162885058364271,
+    "tp": 5947,
+    "fp": 280,
+    "fn": 836,
+    "precision": 0.9550345270595793,
+    "recall": 0.876750700280112,
+    "countries": {
+      "India": {
+        "references": 778,
+        "macro_f05": 0.915469146238377,
+        "tp": 2166,
+        "fp": 135,
+        "fn": 460
+      },
+      "US": {
+        "references": 1222,
+        "macro_f05": 0.9518654649816223,
+        "tp": 3781,
+        "fp": 145,
+        "fn": 376
+      }
+    },
+    "singleton_references": 121,
+    "singleton_false_positive_rate": 0.18181818181818182
+  },
+  "v3_baseline": {
+    "macro_f05": 0.8839352147713383,
+    "tp": 5809,
+    "fp": 538,
+    "fn": 974,
+    "precision": 0.9152355443516622,
+    "recall": 0.8564057201828099,
+    "countries": {
+      "India": {
+        "references": 778,
+        "macro_f05": 0.8714213962832748,
+        "tp": 2082,
+        "fp": 248,
+        "fn": 544
+      },
+      "US": {
+        "references": 1222,
+        "macro_f05": 0.9213844252163165,
+        "tp": 3727,
+        "fp": 290,
+        "fn": 430
+      }
+    },
+    "singleton_references": 121,
+    "singleton_false_positive_rate": 0.30578512396694213
+  },
+  "baseline_packet_score": 0.8839352147713383,
+  "improved_over_v3": true,
+  "fit_seconds": 11.027271600003587,
+  "best_iteration": 560,
+  "parity": {
+    "rows": 2048,
+    "max_abs_probability_difference": 0.0,
+    "threshold_decision_differences": 0
+  }
+}
