@@ -71,8 +71,8 @@ Training packets, canonical split assignments, and the trainer source are archiv
 Spartans — Amazon ML Challenge 2026
 
 Teammates and collaborators:
-- Nandini Thirumalaraju
-- Vedaanga Varma
+- @nandinitirumlaraju
+- @vedaangavarma7-epic
 
 ## Notes for future work
 
