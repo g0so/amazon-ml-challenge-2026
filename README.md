@@ -66,6 +66,14 @@ Training packets, canonical split assignments, and the trainer source are archiv
 | `notebooks/` | Early exploratory work |
 | `data/` | Local data README and project notes |
 
+## Team and contributors
+
+Spartans — Amazon ML Challenge 2026
+
+Teammates and collaborators:
+- Nandini Thirumalaraju
+- Vedaanga Varma
+
 ## Notes for future work
 
 This repo is meant to be a clean, usable foundation for future improvement and extension. It keeps the final solution package, documentation, and archived evidence in a form that is easy to review on GitHub while leaving the nonpublic raw data and expensive local caches out of the public repository.
